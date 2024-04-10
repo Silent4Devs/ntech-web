@@ -18,6 +18,31 @@
 }
 
 /* normalize */
+html{
+	scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 10px;    /* Tamaño del scroll en horizontal */
+    /*display: none;*/  /* Ocultar scroll */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+html::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+html::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+html::-webkit-scrollbar-thumb:active {
+    background-color: var(--verde);
+}
 *{
     box-sizing: border-box;
 }
@@ -64,10 +89,22 @@ header{
 }
 .logo-ntech img{
     height: 45px;
+    transition: 0.3s;
+}
+.logo-ntech:hover img{
+    transform: scale(1.03);
 }
 header a:not(.logo-ntech ,header a.last-child){
     border-left: 1px solid #737373;
     padding: 3px 20px;
+}
+header a{
+    transition: 0.2s;
+    color: #d0d0d0;
+}
+header a:hover{
+    text-shadow: 0px 0px 6px #fff;
+    color: #fff;
 }
 
 main{
@@ -87,6 +124,17 @@ main{
     background-attachment: fixed;
     text-align: center;
 }
+.content-inicio *{
+    animation: entry-inicio 2s;
+}
+@keyframes entry-inicio {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 h1{
     font-size: 50px;
     text-align: center;
@@ -105,6 +153,13 @@ h1{
     padding: 10px 25px;
     font-size: 18px;
     margin-top: 40px;
+    transition: 0.4s;
+}
+.btn-first:hover{
+    background-color: var(--verde);
+    color: #000;
+    border-radius: 0px;
+    padding: 10px 35px;
 }
 
 .content-cohete{
@@ -324,5 +379,57 @@ footer{
 @media(max-width: 500px) {
     body{
         zoom: 30%;
+    }
+}
+
+.cohete{
+    animation: cohete-entry linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes cohete-entry {
+    from{
+        margin-top: 200px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
+
+.box-items-pasos img{
+    animation: pasos-entry both;
+    animation-timeline: view();
+}
+.box-items-pasos img:nth-child(1n){
+    animation-range: entry 0% cover 20%;
+}
+.box-items-pasos img:nth-child(2n){
+    animation-range: entry 20% cover 30%;
+}
+.box-items-pasos img:nth-child(3n){
+    animation-range: entry 30% cover 50%;
+}
+@keyframes pasos-entry {
+    0%{
+        transform: scale(0.8) translateY(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(0.8) translateY(0px);
+        opacity: 1;
+    }
+}
+
+.items-serv ul li{
+    animation: servs-entry both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}
+@keyframes servs-entry {
+    0%{
+        clip-path: polygon(0 0, 20% 0, 20% 100%, 0% 100%);
+    }
+    100%{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
