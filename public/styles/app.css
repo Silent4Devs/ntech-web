@@ -227,9 +227,6 @@ h1{
     margin-bottom: 20px;
     background-color: #131314;
     color: var(--verde);
-    display: flex;
-    align-items: center;
-    gap: 15px;
     padding-left: 30px;
     font-size: 18px;
     font-family: 'Sofia Pro bold';
@@ -243,6 +240,14 @@ h1{
 }
 .items-serv ul li:hover img{
     filter: none;
+}
+.items-serv ul li a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .items-serv ul li img{
