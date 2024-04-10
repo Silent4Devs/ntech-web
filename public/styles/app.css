@@ -86,6 +86,7 @@ header{
     font-family: 'Sofia Pro light';
     backdrop-filter: blur(100px);
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .logo-ntech img{
     height: 45px;
