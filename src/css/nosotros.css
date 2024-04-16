@@ -1,0 +1,20 @@
+.content-inicio{
+    background-image: url('../img/fondo-nosotros.png');
+}
+.mano-robot{
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-20%, -50%);
+}
+.mano-humana{
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -40%);
+}
+.content-evolucion{
+    background-image: url('../img/fondo-evolucion.png');
+}
