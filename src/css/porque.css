@@ -1,0 +1,15 @@
+.content-inicio{
+    background-image: url('../img/fondo-porque.png');
+}
+.box-isos img{
+    width: 230px;
+}
+.box-columns-green{
+    margin-top: -140px;
+}
+.box-columns-green img{
+    width: 250px;
+}
+.column-green{
+    transform: translateX(40px);
+}
