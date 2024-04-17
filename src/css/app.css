@@ -61,7 +61,7 @@ h1, h2, h3, h4{
 }
 p{
     text-wrap: pretty;
-    line-height: 30px;
+    line-height: 35px;
 }
 a{
     color: unset;
@@ -77,6 +77,9 @@ hr{
     border: none;
     border-bottom: 1px solid var(--verde);
     margin: 0;
+}
+strong{
+    font-family: 'Sofia Pro bold';
 }
 
 /* clases globales ------------------------ */
@@ -123,6 +126,9 @@ hr{
 }
 .justify-center{
     justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
 }
 .align-center{
     align-items: center;

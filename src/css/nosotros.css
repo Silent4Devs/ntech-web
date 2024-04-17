@@ -15,6 +15,23 @@
     right: 0;
     transform: translate(30%, -40%);
 }
-.content-evolucion{
+.content.content-evolucion{
     background-image: url('../img/fondo-evolucion.png');
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.card-open{
+    background-image: url('../img/fondo-open.png');
+    background-color: #00000000;
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    padding: 100px;
+}
+.img-integrantes{
+    width: 600px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(50px);
 }
