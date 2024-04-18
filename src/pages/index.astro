@@ -1,19 +1,21 @@
 ---
 import "../css/home.css";
 import Layout from "../layouts/layout.astro";
+
+import BtnReserva from "../components/btn-reserva.astro";
 ---
 
 <Layout>
   <section id="inicio">
-    <div class="content-inicio">
-      <h1>EVOLUCIÓN. DIGITAL.</h1>
-
-      <p class="first-p">
+    <div class="content content-inicio">
+      <h1>
+        EVOLUCIÓN<span>.</span> DIGITAL<span>.</span>
+      </h1>
+      <p class="p-inicio">
         Aceleramos la evolución de las organizaciones <br />
         a través de la tecnología.
       </p>
-
-      <a href="" class="btn btn-first"> Reserva una Demo Gratis </a>
+      <BtnReserva />
     </div>
   </section>
   <section>
@@ -89,7 +91,7 @@ import Layout from "../layouts/layout.astro";
             <li>
               <a href="servicio-agileops">
                 <img src="img/icon-velocity.svg" alt="Icono velocity" />
-                ITOPS Autónomo
+                IT Ops Autónomo
               </a>
             </li>
             <li>
@@ -125,7 +127,13 @@ import Layout from "../layouts/layout.astro";
             <li>
               <a href="#">
                 <img src="img/icon-velocity.svg" alt="Icono velocity" />
-                Monitoreo Industrial
+                Soluciones de Industria
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icon-velocity.svg" alt="Icono velocity" />
+                Hardware
               </a>
             </li>
           </ul>
@@ -138,20 +146,23 @@ import Layout from "../layouts/layout.astro";
     <div class="content-alianzas">
       <div class="box-alianzas">
         <div
-          style="display: flex; align-items: center; justify-content: space-between;">
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
           <img src="img/partners/Ntech_Recorte-7-8.png" alt="Logo Alibaba" />
           <img src="img/partners/Ntech_Recorte-7-3.png" alt="Logo Oracle" />
           <img src="img/partners/Ntech_Recorte-7-7.png" alt="Logo Kaytus" />
           <img src="img/partners/Ntech_Recorte-7-6.png" alt="Logo Atlassian" />
         </div>
         <div
-          style="display: flex; align-items: center; justify-content:center; margin-top: 60px; gap: 60px;">
+          style="display: flex; align-items: center; justify-content:center; margin-top: 60px; gap: 60px;"
+        >
           <img src="img/partners/Ntech_Recorte-7-9.png" alt="Logo Manage" />
           <img src="img/partners/Ntech_Recorte-7-2.png" alt="Logo RocketBot" />
           <img src="img/partners/Ntech_Recorte-7-1.png" alt="Logo Microsoft" />
         </div>
         <div
-          style="display: flex; align-items: center; justify-content:center; margin-top: 60px; gap:50px; margin-left: -200px;">
+          style="display: flex; align-items: center; justify-content:center; margin-top: 60px; gap:50px; margin-left: -200px;"
+        >
           <img src="img/partners/Ntech_Recorte-7-5.png" alt="Logo bmc" />
           <img src="img/partners/Ntech_Recorte-7-4.png" alt="Logo Zabbix" />
           <img src="img/partners/Ntech_Recorte-7-10.png" alt="Logo Red Hat" />
@@ -163,7 +174,8 @@ import Layout from "../layouts/layout.astro";
     <div class="content-evolucion">
       <div
         class="card-gray"
-        style="text-align: center; display: block; padding: 60px;">
+        style="text-align: center; display: block; padding: 60px;"
+      >
         <h2 style="font-size:50px; width: 100%;" class="title-evo">
           Evolución<span style="color: var(--verde);">.</span>
         </h2>
