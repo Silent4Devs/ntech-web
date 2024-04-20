@@ -120,16 +120,15 @@ strong {
 .btn-main {
     border-radius: 100px;
     border: 1px solid var(--verde);
-    padding: 10px 25px;
+    padding: 10px 30px;
     font-size: 18px;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 .btn-main:hover {
     background-color: var(--verde);
     color: #000;
     border-radius: 0px;
-    padding: 10px 35px;
 }
 
 .card-gray {
@@ -239,6 +238,10 @@ strong {
 
 .gap-6 {
     gap: 60px;
+}
+
+.z-5{
+    z-index: 5;
 }
 
 /* inicio pages ---------------- */
@@ -361,10 +364,11 @@ footer {
     font-family: 'Sofia Pro light';
 }
 
-.footer-box-info img:not(.logo-footer) {
-    width: 15px;
-    transform: translateY(10%);
-    margin-right: 15px;
+.icon-footer{
+    width:40px; 
+    height: 40px;
+    display: grid;
+    place-items: center;
 }
 
 .logo-footer {

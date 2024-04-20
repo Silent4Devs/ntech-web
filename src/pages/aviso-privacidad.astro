@@ -2,24 +2,47 @@
 import Layout from "../layouts/layout.astro";
 ---
 
+<style>
+  h1,
+  h2 {
+    font-size: 45px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  h1::after,
+  h2::after {
+    content: ".";
+    color: var(--verde);
+  }
+  p {
+    font-family: "Sofia Pro light";
+  }
+  .card-gray {
+    padding: 80px;
+  }
+  hr {
+    border-color: #282828 !important;
+    margin: 60px 0px;
+  }
+</style>
+
 <Layout>
-  <section id="inicio">
-    <div class="content content-inicio" style="height: auto;">
-      <h1 class="mt-6">AVISO DE PRIVACIDAD<span>.</span></h1>
-    </div>
-  </section>
   <section>
     <div class="content content-aviso">
       <div class="content-limit mt-5">
         <div class="card-gray">
-          <h2>Política de Privacidad</h2>
+          <h1>AVISO DE PRIVACIDAD</h1>
           <p>
-            Esta Política de Privacidad describe cómo NTechnology ("nosotros",
-            "nuestro", "nos") recopila, utiliza y comparte información personal
-            obtenida a través de nuestro sitio web https://n.technology. Al
-            utilizar nuestro sitio web, aceptas las prácticas descritas en esta
+            Esta Política de Privacidad describe cómo <strong>
+              NTechnology
+            </strong> ("nosotros", "nuestro", "nos") recopila, utiliza y comparte
+            información personal obtenida a través de nuestro sitio web <strong>
+              https://n.technology.
+            </strong>
+            Al utilizar nuestro sitio web, aceptas las prácticas descritas en esta
             política.
           </p>
+          <hr />
 
           <h2>Información que recopilamos:</h2>
           <p>
@@ -35,13 +58,19 @@ import Layout from "../layouts/layout.astro";
             navegador web, páginas que visitas en nuestro sitio, tiempo dedicado
             en cada página, y otros datos de navegación.
           </p>
-          <h2>Uso de la información:</h2>
+
+          <hr />
+
+          <h2>Uso de la información</h2>
           <p>
             Utilizamos la información recopilada para proporcionar y mejorar
             nuestros servicios, personalizar tu experiencia en nuestro sitio
             web, procesar tus transacciones, comunicarnos contigo, y cumplir con
             nuestras obligaciones legales.
           </p>
+
+          <hr />
+
           <h2>Transferencia de sus datos personales</h2>
           <p>
             Su información personal podrá ser transferida a las siguientes
@@ -74,14 +103,20 @@ import Layout from "../layouts/layout.astro";
             la Ley Federal de Protección de Datos Personales en Posesión de los
             Particulares, su información personal no será trasferida.
           </p>
-          <h2>Divulgación de información:</h2>
+
+          <hr />
+
+          <h2>Divulgación de información</h2>
           <p>
             No vendemos, alquilamos ni compartimos tu información personal con
             terceros, excepto cuando sea necesario para proporcionar nuestros
             servicios, cumplir con la ley, proteger nuestros derechos o en caso
             de una fusión, adquisición o venta de activos.
           </p>
-          <h2>Cookies:</h2>
+
+          <hr />
+
+          <h2>Cookies</h2>
           <p>
             Utilizamos cookies y tecnologías similares para mejorar la
             experiencia del usuario, analizar el tráfico del sitio y
@@ -90,7 +125,10 @@ import Layout from "../layouts/layout.astro";
             cookie. Sin embargo, si desactivas las cookies, es posible que
             algunas funciones de nuestro sitio web no estén disponibles.
           </p>
-          <h2>Enlaces a sitios de terceros:</h2>
+
+          <hr />
+
+          <h2>Enlaces a sitios de terceros</h2>
           <p>
             Nuestro sitio web puede contener enlaces a sitios web de terceros
             que no están controlados por nosotros. No somos responsables de las
@@ -98,7 +136,10 @@ import Layout from "../layouts/layout.astro";
             Recomendamos revisar las políticas de privacidad de esos sitios
             antes de proporcionar información personal.
           </p>
-          <h2>Seguridad:</h2>
+
+          <hr />
+
+          <h2>Seguridad</h2>
           <p>
             Implementamos medidas de seguridad razonables para proteger tu
             información personal contra el acceso no autorizado, la alteración,
@@ -109,20 +150,26 @@ import Layout from "../layouts/layout.astro";
             y actualmente nos encontramos en transición a la versión 2022 de
             esta norma.
           </p>
-          <h2>Cambios en esta política:</h2>
+
+          <hr />
+
+          <h2>Cambios en esta política</h2>
           <p>
             Nos reservamos el derecho de actualizar esta Política de Privacidad
             en cualquier momento. Te recomendamos revisar periódicamente esta
             página para conocer los cambios. La fecha de la última actualización
             se indica al final de esta política.
           </p>
-          <h2>Contacto:</h2>
-          <p>
+
+          <p class="text-center mt-5">
             Si tienes alguna pregunta sobre esta Política de Privacidad, puedes
-            contactarnos en seguridad.informacion@n.technology.
+            contactarnos en: <br />
+            <span class="color-verde">seguridad.informacion@n.technology</span>
           </p>
-          <p>
-            <small>Fecha de última actualización: 16 de abril del 2024 </small>
+          <p class="text-center">
+            <small style="opacity: 0.3;"
+              >Fecha de última actualización: 16 de abril del 2024
+            </small>
           </p>
         </div>
       </div>

@@ -12,4 +12,9 @@
 }
 .column-green{
     transform: translateX(40px);
+    width: 33.33%;
+}
+.column-green p{
+    padding-right: 75px;
+    font-family: 'Sofia Pro light';
 }

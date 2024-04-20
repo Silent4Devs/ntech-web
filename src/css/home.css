@@ -51,7 +51,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .card-gray {
@@ -246,22 +246,6 @@
 @media(max-width: 500px) {
     body {
         zoom: 30%;
-    }
-}
-
-.cohete {
-    animation: cohete-entry linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 50%;
-}
-
-@keyframes cohete-entry {
-    from {
-        margin-top: 200px;
-    }
-
-    to {
-        margin-top: 0px;
     }
 }
 
