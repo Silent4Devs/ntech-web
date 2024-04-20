@@ -1,32 +1,37 @@
 ---
 import "../css/home.css";
 import Layout from "../layouts/layout.astro";
+
+import BtnReserva from "../components/btn-reserva.astro";
 ---
 
 <Layout>
   <section id="inicio">
-    <div class="content-inicio">
-      <h1>EVOLUCIÓN. DIGITAL.</h1>
-
-      <p class="first-p">
+    <div class="content content-inicio">
+      <h1>
+        EVOLUCIÓN<span>.</span> DIGITAL<span>.</span>
+      </h1>
+      <p class="p-inicio">
         Aceleramos la evolución de las organizaciones <br />
         a través de la tecnología.
       </p>
-
-      <a href="" class="btn btn-first"> Reserva una Demo Gratis </a>
+      <BtnReserva />
     </div>
   </section>
   <section>
     <div class="content-cohete">
       <img src="img/cohete.png" class="cohete" alt="" />
       <div class="card-gray">
-        <div>
+        <div class="z-5">
           <h2 style="font-size: 30px;">
             ¿Tu ecosistema tecnológico impulsa la continuidad, evolución y
             rentabilidad?
           </h2>
+          <br />
+          <br />
+          <a href="#" class="btn-main">Contactanos</a>
         </div>
-        <div>
+        <div class="z-5">
           <ul class="list-cohete">
             <li>
               <img src="img/icon-right.png" alt="" />
@@ -74,6 +79,7 @@ import Layout from "../layouts/layout.astro";
             Eliminamos la complejidad de las iniciativas y operaciones de TI con
             nuestros servicios y plataformas.
           </h2>
+          <hr style="width: 100px; margin-left: -20px;" />
           <p>
             Combinamos tecnologías propietarias, alianzas estratégicas, nuestro
             equipo de ingenieros y nuestros procesos especializados.
@@ -87,9 +93,9 @@ import Layout from "../layouts/layout.astro";
         <div class="items-serv">
           <ul>
             <li>
-              <a href="servicio-agileops">
+              <a href="servicio-itops">
                 <img src="img/icon-velocity.svg" alt="Icono velocity" />
-                ITOPS Autónomo
+                IT Ops Autónomo
               </a>
             </li>
             <li>
@@ -111,7 +117,7 @@ import Layout from "../layouts/layout.astro";
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="servicio-multicloud">
                 <img src="img/icon-velocity.svg" alt="Icono velocity" />
                 Data y ML
               </a>
@@ -125,7 +131,13 @@ import Layout from "../layouts/layout.astro";
             <li>
               <a href="#">
                 <img src="img/icon-velocity.svg" alt="Icono velocity" />
-                Monitoreo Industrial
+                Soluciones de Industria
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icon-velocity.svg" alt="Icono velocity" />
+                Hardware
               </a>
             </li>
           </ul>

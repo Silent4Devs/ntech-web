@@ -1,31 +1,29 @@
-
-.content-inicio{
+.content-inicio {
     background-image: url('../img/fondo-mundo.png');
 }
-.content-inicio *{
+
+.content-inicio * {
     animation: entry-inicio 2s;
 }
+
 @keyframes entry-inicio {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
-h1{
-    font-size: 50px;
-    text-align: center;
-    padding-top: 300px;
-    margin: 0;
-}
-.first-p{
+
+.first-p {
     color: var(--verde);
     font-size: 25px;
     text-align: center;
     margin-top: 40px;
 }
-.btn-first{
+
+.btn-first {
     border-radius: 100px;
     border: 1px solid var(--verde);
     padding: 10px 25px;
@@ -33,27 +31,30 @@ h1{
     margin-top: 40px;
     transition: 0.4s;
 }
-.btn-first:hover{
+
+.btn-first:hover {
     background-color: var(--verde);
     color: #000;
     border-radius: 0px;
     padding: 10px 35px;
 }
 
-.content-cohete{
+.content-cohete {
     position: relative;
     padding-top: 50px;
 }
-.cohete{
+
+.cohete {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
-.card-gray{
+
+.card-gray {
     background-color: #131314;
     width: 1000px;
     margin: auto;
@@ -61,45 +62,51 @@ h1{
     display: flex;
     justify-content: space-between;
 }
-.card-gray div{
+
+.card-gray div {
     width: 300px;
 }
 
-.list-cohete{
+.list-cohete {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.list-cohete li{
+
+.list-cohete li {
     display: flex;
     align-items: start;
     gap: 10px;
     margin-bottom: 20px;
 }
-.list-cohete img{
+
+.list-cohete img {
     min-width: 20px;
 }
-.card-gray-gran{
+
+.card-gray-gran {
     background-image: url('../img/fondo-card.png');
     background-size: cover;
     width: 1000px;
     margin: auto;
-    padding:  50px;
+    padding: 50px;
     padding-top: 100px;
     text-align: center;
 }
 
-.content-servicios{
+.content-servicios {
     width: 1000px;
     margin: auto;
     margin-top: 100px;
 }
-.items-serv ul{
+
+.items-serv ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-.items-serv ul li{
+
+.items-serv ul li {
     width: 350px;
     height: 60px;
     margin-bottom: 20px;
@@ -111,15 +118,18 @@ h1{
     cursor: pointer;
     transition: 0.3s;
 }
-.items-serv ul li:hover{
+
+.items-serv ul li:hover {
     background-color: var(--verde);
     color: #000;
     transform: translateX(-30px);
 }
-.items-serv ul li:hover img{
+
+.items-serv ul li:hover img {
     filter: none;
 }
-.items-serv ul li a{
+
+.items-serv ul li a {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -128,64 +138,73 @@ h1{
     height: 100%;
 }
 
-.items-serv ul li img{
+.items-serv ul li img {
     filter: brightness(0) saturate(100%) invert(85%) sepia(90%) saturate(5730%) hue-rotate(12deg) brightness(99%) contrast(91%);
 }
-.content-servicios p{
+
+.content-servicios p {
     line-height: 35px;
     font-family: 'Sofia Pro light';
     margin-top: 40px;
 }
 
-.content-alianzas{
+.content-alianzas {
     width: 1000px;
     margin: auto;
     margin-top: 100px;
 }
-.box-alianzas img{
+
+.box-alianzas img {
     height: 38px;
 }
 
-.content-evolucion{
+.content-evolucion {
     margin-top: 100px;
 }
-.title-evo{
+
+.title-evo {
     border-bottom: 4px solid #000;
     padding-bottom: 30px;
 }
-.hands-greeting{
+
+.hands-greeting {
     height: 150px;
     transform: scale(2) translateY(40px);
 }
 
-.content-ubicaciones{
+.content-ubicaciones {
     width: 1000px;
     margin: auto;
     text-align: center;
     margin-top: 200px;
 }
 
-.content-pasos{
+.content-pasos {
     width: 1000px;
     margin: auto;
     margin-top: 100px;
 }
-.box-items-pasos{
+
+.box-items-pasos {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
-.box-items-pasos{
+
+.box-items-pasos {
     transform: translateY(-200px);
 }
-.box-items-pasos img{
+
+.box-items-pasos img {
     transform: scale(0.8);
 }
-.box-items-pasos-info{
+
+.box-items-pasos-info {
     display: flex;
     justify-content: space-around;
 }
-.box-items-pasos-info div{
+
+.box-items-pasos-info div {
     width: 220px;
     text-align: center;
     line-height: 30px;
@@ -193,85 +212,84 @@ h1{
 }
 
 @media(max-width: 1700px) {
-    .cohete{
+    .cohete {
         width: 1000px;
     }
 }
+
 @media(max-width: 1300px) {
-    .cohete{
+    .cohete {
         width: 800px;
     }
 }
+
 @media(max-width: 1200px) {
-    h1{
+    h1 {
         padding-top: 200px;
     }
 }
+
 @media(max-width: 1000px) {
-    body{
+    body {
         zoom: 50%;
     }
-    .cohete{
+
+    .cohete {
         margin-top: 200px;
     }
-    .content-inicio{
+
+    .content-inicio {
         height: auto;
     }
 }
+
 @media(max-width: 500px) {
-    body{
+    body {
         zoom: 30%;
     }
 }
 
-.cohete{
-    animation: cohete-entry linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 50%;
-}
-@keyframes cohete-entry {
-    from{
-        margin-top: 200px;
-    }
-    to{
-        margin-top: 0px;
-    }
-}
-
-.box-items-pasos img{
+.box-items-pasos img {
     animation: pasos-entry both;
     animation-timeline: view();
 }
-.box-items-pasos img:nth-child(1n){
+
+.box-items-pasos img:nth-child(1n) {
     animation-range: entry 0% cover 20%;
 }
-.box-items-pasos img:nth-child(2n){
+
+.box-items-pasos img:nth-child(2n) {
     animation-range: entry 20% cover 30%;
 }
-.box-items-pasos img:nth-child(3n){
+
+.box-items-pasos img:nth-child(3n) {
     animation-range: entry 30% cover 50%;
 }
+
 @keyframes pasos-entry {
-    0%{
+    0% {
         transform: scale(0.8) translateY(150px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: scale(0.8) translateY(0px);
         opacity: 1;
     }
 }
 
-.items-serv ul li{
+.items-serv ul li {
     animation: servs-entry both;
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
 }
+
 @keyframes servs-entry {
-    0%{
+    0% {
         clip-path: polygon(0 0, 20% 0, 20% 100%, 0% 100%);
     }
-    100%{
+
+    100% {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
