@@ -72,7 +72,6 @@ h4 {
 
 p {
     text-wrap: pretty;
-    line-height: 35px;
 }
 
 a {
@@ -85,8 +84,13 @@ button {
     box-shadow: none;
     border: none;
     outline: none;
+    color: #fff;
+    cursor: pointer;
 }
-
+img{
+    width: unset;
+    height: unset;
+}
 hr {
     border: none;
     border-bottom: 1px solid var(--verde);
@@ -101,22 +105,18 @@ strong {
 .font-light {
     font-family: 'Sofia Pro light';
 }
-
 .font-bold {
     font-family: 'Sofia Pro bold';
 }
-
 .content {
     width: 100%;
     padding: 0px 50px;
 }
-
 .content-limit {
     width: 100%;
     max-width: 1000px;
     margin: auto;
 }
-
 .btn-main {
     border-radius: 100px;
     border: 1px solid var(--verde);
@@ -124,42 +124,51 @@ strong {
     font-size: 18px;
     transition: 0.5s;
 }
-
 .btn-main:hover {
     background-color: var(--verde);
     color: #000;
     border-radius: 0px;
 }
-
 .card-gray {
     padding: 50px;
     background-color: #131314;
 }
-
 .relative {
     position: relative;
 }
-
+.absolute{
+    position: absolute;
+}
+.top-0{
+    top: 0;
+}
+.left-0{
+    left: 0;
+}
+.right-0{
+    right: 0;
+}
+.bottom-0{
+    bottom: 0;
+}
 .text-center {
     text-align: center;
 }
-
 .flex {
     display: flex;
 }
-
 .justify-center {
     justify-content: center;
 }
-
 .justify-between {
     justify-content: space-between;
 }
-
 .align-center {
     align-items: center;
 }
-
+.hidden{
+    overflow: hidden;
+}
 .color-verde {
     color: var(--verde);
 }

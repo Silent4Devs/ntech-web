@@ -1,5 +1,8 @@
 ---
 import "../css/app.css";
+
+import { Image } from "astro:assets";
+import LogoNtech from "../img/logo.png";
 ---
 
 <html lang="es-MX">
@@ -13,11 +16,12 @@ import "../css/app.css";
   <body>
     <header>
       <a href="/#inicio" class="logo-ntech">
-        <img src="img/logo.png" alt="Logo Ntechnology" />
+        <!-- <img src="img/logo.png" alt="Logo Ntechnology" /> -->
+        <Image src={LogoNtech} alt="Logo Ntechnology" />
       </a>
       <a href="#" style="border: none;">Servicios</a>
-      <a href="nosotros">Nosotros</a>
-      <a href="porque">Ntechnology</a>
+      <a href="/nosotros/">Nosotros</a>
+      <a href="/porque-ntechnology/">Por qué Ntechnology</a>
       <a href="https://n.technology/news/" target="_blank">Blog</a>
       <a href="#">Contacto</a>
     </header>
@@ -36,7 +40,10 @@ import "../css/app.css";
 
           Av. Insurgentes Sur 303, <br />
           Hipódromo Condesa, Cuauhtémoc, CDMX México <br />
-          C.P. 06100 <span style="color: var(--verde);"> | </span> CDMX
+          C.P. 06100 <span class="color-verde"> | </span> CDMX <span
+            class="color-verde">
+            |
+          </span> MÉXICO
         </div>
         <div>
           <div class="flex align-center">
@@ -74,7 +81,7 @@ import "../css/app.css";
         </div>
       </div>
       <div class="copyright-footer">
-        Copyright @ 2023 | All rights NTechnology Group LLC
+        Copyright @ 2023 | All rights reservedNTechnology
       </div>
     </footer>
   </body>
