@@ -5,26 +5,43 @@ import "../css/app.css";
 <html lang="es-MX">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Ntechnology</title>
+    <title>ntechnology</title>
   </head>
   <body>
     <header>
-      <a href="/#inicio" class="logo-ntech">
-        <img src="img/logo.png" alt="Logo Ntechnology" />
-      </a>
-      <a href="#" style="border: none;">Servicios</a>
-      <a href="nosotros">Nosotros</a>
-      <a href="porque">Ntechnology</a>
-      <a href="https://n.technology/news/" target="_blank">Blog</a>
-      <a href="#">Contacto</a>
+      <nav>
+        <a href="/#inicio" class="logo-ntech">
+          <img src="../img/logo.png" alt="Logo Ntechnology" />
+        </a>
+        <button class="nav-item btn-servs-options">
+          <span>Servicios</span>
+          <ul class="header-list-servs">
+            <li><a href="">ITOps Autónomo</a></li>
+            <li><a href="/servicio-itops/">ITOPS</a></li>
+            <li><a href="">Nube Pública</a></li>
+            <li><a href="/servicio-nube-privada/">Nube Privada</a></li>
+            <li><a href="/servicio-multicloud/">Data y ML</a></li>
+            <li><a href="">Soluciones de Industria</a></li>
+            <li><a href="">Hardware</a></li>
+          </ul>
+        </button>
+        <a href="/nosotros/" class="nav-item"><span> Nosotros </span></a>
+        <a href="/porque-ntechnology/" class="nav-item"
+          ><span>Por qué Ntechnology</span></a
+        >
+        <a href="https://n.technology/news/" class="nav-item" target="_blank"
+          ><span>Blog</span></a
+        >
+        <a href="#footer" class="nav-item"><span>Contacto</span></a>
+      </nav>
     </header>
     <main>
       <slot />
     </main>
-    <footer>
+    <footer id="footer">
       <img src="/img/footer-lines.png" alt="" class="lines-footer" />
 
       <div class="footer-box-info">
@@ -34,9 +51,13 @@ import "../css/app.css";
           >
           <br />
 
-          Av. Insurgentes Sur 303, <br />
-          Hipódromo Condesa, Cuauhtémoc, CDMX México <br />
-          C.P. 06100 <span style="color: var(--verde);"> | </span> CDMX
+          <a href="https://maps.app.goo.gl/tog8EcdYWHkPg8yq6" target="_blank">
+            Av. Insurgentes Sur 303, <br />
+            Hipódromo Condesa, Cuauhtémoc, CDMX México <br />
+            C.P. 06100
+            <span class="color-verde" style="margin: 0px 10px;"> | </span> CDMX
+            <span class="color-verde" style="margin: 0px 10px;"> | </span> MÉXICO
+          </a>
         </div>
         <div>
           <div class="flex align-center">
@@ -55,26 +76,28 @@ import "../css/app.css";
 
           <div class="flex align-center">
             <div class="icon-footer"></div>
-            <a href="aviso-privacidad" style="text-decoration: underline;"
-              >Política de privacidad</a
-            >
+            <a href="aviso-privacidad">Política de privacidad</a>
           </div>
         </div>
         <div>
-          <img src="img/logo.png" alt="Logo Ntech" class="logo-footer" />
+          <a
+            href="https://www.linkedin.com/company/ntechnologymx/"
+            target="_blank">
+            <img src="../img/logo.png" alt="Logo Ntech" class="logo-footer" />
 
-          <div
-            class="flex align-center mt-1"
-            style="justify-content: flex-end;">
-            <div class="icon-footer">
-              <img src="/img/icon-link.png" alt="" />
+            <div
+              class="flex align-center mt-1"
+              style="justify-content: flex-end;">
+              <div class="icon-footer">
+                <img src="/img/icon-link.png" alt="" />
+              </div>
+              /n-technology
             </div>
-            /n-technology
-          </div>
+          </a>
         </div>
       </div>
       <div class="copyright-footer">
-        Copyright @ 2023 | All rights NTechnology Group LLC
+        Copyright @ 2023 | All rights reservedNTechnology
       </div>
     </footer>
   </body>

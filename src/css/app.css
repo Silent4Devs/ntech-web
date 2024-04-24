@@ -68,11 +68,11 @@ h3,
 h4 {
     text-wrap: balance;
     font-family: 'Sofia Pro bold';
+    margin-top: 0;
 }
 
 p {
     text-wrap: pretty;
-    line-height: 35px;
 }
 
 a {
@@ -81,12 +81,13 @@ a {
 }
 
 button {
-    background-color: rgb(0, 0, 0, 0);
-    box-shadow: none;
-    border: none;
-    outline: none;
+    all: unset;
+    cursor: pointer;
 }
-
+img{
+    width: unset;
+    height: unset;
+}
 hr {
     border: none;
     border-bottom: 1px solid var(--verde);
@@ -101,65 +102,72 @@ strong {
 .font-light {
     font-family: 'Sofia Pro light';
 }
-
 .font-bold {
     font-family: 'Sofia Pro bold';
 }
-
 .content {
     width: 100%;
     padding: 0px 50px;
 }
-
 .content-limit {
     width: 100%;
     max-width: 1000px;
     margin: auto;
 }
-
 .btn-main {
     border-radius: 100px;
     border: 1px solid var(--verde);
-    padding: 10px 30px;
-    font-size: 18px;
+    padding: 15px 60px;
+    font-size: 20px;
     transition: 0.5s;
+    font-family: 'Sofia Pro light';
+    color: #ddd;
 }
-
 .btn-main:hover {
     background-color: var(--verde);
     color: #000;
     border-radius: 0px;
 }
-
 .card-gray {
     padding: 50px;
     background-color: #131314;
 }
-
 .relative {
     position: relative;
 }
-
+.absolute{
+    position: absolute;
+}
+.top-0{
+    top: 0;
+}
+.left-0{
+    left: 0;
+}
+.right-0{
+    right: 0;
+}
+.bottom-0{
+    bottom: 0;
+}
 .text-center {
     text-align: center;
 }
-
 .flex {
     display: flex;
 }
-
 .justify-center {
     justify-content: center;
 }
-
 .justify-between {
     justify-content: space-between;
 }
-
 .align-center {
     align-items: center;
 }
-
+.hidden{
+    overflow: hidden;
+}
 .color-verde {
     color: var(--verde);
 }
@@ -297,15 +305,23 @@ header {
     position: fixed;
     top: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 10px;
     font-family: 'Sofia Pro light';
     backdrop-filter: blur(100px);
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.4);
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
 }
 
+.logo-ntech{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+}
 .logo-ntech img {
     height: 45px;
     transition: 0.3s;
@@ -315,19 +331,63 @@ header {
     transform: scale(1.03);
 }
 
-header a:not(.logo-ntech, header a.last-child) {
-    border-left: 1px solid #737373;
-    padding: 3px 20px;
-}
-
-header a {
+.nav-item {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
     transition: 0.2s;
     color: #d0d0d0;
 }
 
-header a:hover {
+.nav-item span {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover span {
     text-shadow: 0px 0px 6px #fff;
     color: #fff;
+}
+
+
+.header-list-servs{
+    width: 270px;
+    top: 80px;
+    position: absolute;
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow: hidden;
+    
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+}
+.btn-servs-options:hover .header-list-servs{
+    visibility: visible;
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}
+.header-list-servs li{
+    padding: 15px;
+}
+.header-list-servs li a::before{
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: var(--verde);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+.header-list-servs li:hover a::before{
+    width: 10px;
 }
 
 .btn {

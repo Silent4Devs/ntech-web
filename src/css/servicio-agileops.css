@@ -1,0 +1,86 @@
+.content-inicio{
+    background-image: url('../img/fondo-agileops.png');
+}
+.title-indicadores{
+    font-weight: lighter;
+    letter-spacing: 18px;
+    text-align: center;
+}
+.box-border h3 span {
+  font-size: 36px;
+}
+.content-indicadores{
+    background-color: #0f0f10;
+}
+.box-up-down article{
+    width: 230px;
+}
+.box-up-down article p small{
+    opacity: 0.6;
+}
+.content-proactivas{
+    background-image: url('../img/fondo-grani.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.title-proactivas{
+    width: 270px;
+    text-wrap: wrap;
+}
+.box-proactivas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+.box-proactivas article{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    outline: 1px solid var(--verde);
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+}
+.box-proactivas article h2{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.box-proactivas article img{
+    width: 50px;
+}
+.item-line-agente{
+    position: relative;
+}
+.item-line-agente::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background-color: #fff;
+    right: -25px;
+    top: 10%;
+    opacity: 0.5;
+}
+.item-org{
+    width: 100px;
+    height: 100px;
+    background-color: #181819;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    border: 1px solid #2f2f2f;
+}
+.btn-org{
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Sofia Pro light';
+}
+.content-org{
+    background-image: url('img/fondo-eventos.png');
+}

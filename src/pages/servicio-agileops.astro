@@ -1,7 +1,350 @@
 ---
+import "../css/servicio-agileops.css";
 import Layout from "../layouts/layout.astro";
+
+import BtnReserva from "../components/btn-reserva.astro";
+import Indicador from "../components/serv-agileops-indicadores.astro";
+import AlcanceIcon from "../components/serv-agileops-alcance-icon.astro";
 ---
 
 <Layout>
-  <img src="../img/agileops.png" alt="" style="width: 100%;" class="mt-5" />
+  <!-- <img src="../img/agileops.png" alt="" style="width: 100%;" class="mt-5" /> -->
+
+  <section>
+    <div class="content content-inicio">
+      <img src="img/title-agileops.png" alt="AgileOps titulo" />
+      <div class="mt-3">
+        <BtnReserva />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-ultima">
+      <div class="content-limit flex justify-center align-center gap-3 mt-3">
+        <h2 class="font-4" style="min-width: 200px;">
+          La última generación de servicios administrados de TI<span
+            class="color-verde">.</span
+          >
+        </h2>
+        <img
+          src="img/ultima-agileops.png"
+          alt="Trazo decorativo agileops"
+          style="min-width: 350px;"
+        />
+        <div class="font-light font-1" style="min-width: 300px;">
+          <p>
+            <strong class="color-verde">AgileOps</strong> es una plataforma de <strong>
+              servicios administrados autónomos
+            </strong> que nos permite escalar y automatizar de forma inteligente
+            las operaciones de TI.
+          </p>
+          <p>
+            La plataforma <span class="color-verde">
+              reemplaza los trabajos manuales
+            </span> de <strong> NOC</strong>, operaciones y mesa de ayuda <strong>
+              hasta en un 90%.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-indicadores mt-6">
+      <div class="content-limit" style="padding: 100px 0;">
+        <h2 class="font-light title-indicadores font-4">
+          Algunos Indicadores:
+        </h2>
+        <div class="box-indicadores mt-3">
+          <div class="flex justify-center gap-3">
+            <Indicador>
+              <div slot="porcent">70%</div>
+              <div slot="content">Operaciones Resignación de FTEs</div>
+            </Indicador>
+            <Indicador>
+              <div slot="porcent">99%</div>
+              <div slot="content">Reducción de ruido</div>
+            </Indicador>
+            <Indicador>
+              <div slot="porcent">30%</div>
+              <div slot="content">
+                <span class="color-verde">Tickets</span>
+                <br />
+                Reducción de incidencias
+              </div>
+            </Indicador>
+          </div>
+          <div class="flex justify-center gap-3 mt-2">
+            <Indicador>
+              <div slot="porcent">50%</div>
+              <div slot="content">
+                <span class="color-verde">SLAs</span>
+                <br />
+                Tiempo medio de recuperación
+              </div>
+            </Indicador>
+            <Indicador>
+              <div slot="porcent">98%</div>
+              <div slot="content">
+                <span class="color-verde">SLAs</span>
+                <br />
+                Resolución de incidentes
+              </div>
+            </Indicador>
+            <Indicador>
+              <div slot="porcent">40%</div>
+              <div slot="content">Reducción de incidencias</div>
+            </Indicador>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div
+      class="content content-celerar relative hidden"
+      style="padding-top: 200px; padding-bottom: 200px;">
+      <img src="img/malla.png" alt="Malla" class="absolute top-0 left-0" />
+      <img src="img/malla.png" alt="Malla" class="absolute right-0 bottom-0" />
+
+      <div class="content-limit flex justify-center gap-6 box-up-down">
+        <article class="text-center">
+          <img src="img/row-down.png" alt="flecha abajo" />
+          <h2>Reducción de costos en TI</h2>
+          <hr style="width: 60px; margin: auto;" />
+          <p class="font-light">
+            <small>
+              Optimice y automatice las actividades de ITOps y reduzca costos.
+            </small>
+          </p>
+        </article>
+        <article class="text-center">
+          <img src="img/row-up.png" alt="flecha abajo" />
+          <h2>Mejor Disponibilidad</h2>
+          <hr style="width: 60px; margin: auto;" />
+          <p>
+            <small>
+              Acelera Ia remediación y restaura la disponibilidad más rápido.
+            </small>
+          </p>
+        </article>
+        <article class="text-center">
+          <img src="img/row-up.png" alt="flecha abajo" />
+          <h2>Mejor experiencia de usuario</h2>
+          <hr style="width: 60px; margin: auto;" />
+          <p>
+            <small>
+              Reduce el tiempo de inactividad y el tiempo medio de resolución.
+            </small>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-proactivas">
+      <div class="content content-limit">
+        <div class="flex justify-between">
+          <h2 class="title-proactivas font-4">
+            Evoluciona de operaciones reactivas a <span class="color-verde"
+              >PROACTIVAS</span
+            >.
+          </h2>
+          <img
+            src="img/lap-cicle.png"
+            alt="Lap"
+            style="width: 600px; margin-top: -50px;"
+          />
+        </div>
+        <div class="box-proactivas mt-3">
+          <article>
+            <img
+              src="../img/icon-proa-1.png"
+              alt="Icono Correlación de eventos"
+            />
+            <h2>Correlación de eventos</h2>
+          </article>
+          <article>
+            <img
+              src="../img/icon-proa-2.png"
+              alt="Icono Análisis de causa raíz"
+            />
+            <h2>Análisis de causa raíz</h2>
+          </article>
+          <article>
+            <img src="../img/icon-proa-3.png" alt="Icono Mapa de Impacto" />
+            <h2>Mapa de <br /> Impacto</h2>
+          </article>
+          <article>
+            <img src="../img/icon-proa-4.png" alt="Icono Autoremediación" />
+            <h2>Auto-remediación</h2>
+          </article>
+          <article>
+            <img src="../img/icon-proa-5.png" alt="Icono Cambios  autónomos" />
+            <h2>Cambios <br /> autónomos</h2>
+          </article>
+          <article>
+            <img src="../img/icon-proa-6.png" alt="Icono Cambios  autónomos" />
+            <h2>Solicitudes <br /> autónomas</h2>
+          </article>
+          <article>
+            <img src="../img/icon-proa-7.png" alt="Icono Cambios  autónomos" />
+            <h2>Autogestión</h2>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-alcance">
+      <div class="content-limit mt-4">
+        <h2 class="text-center font-6">
+          <span class="color-verde"> ALCANCE</span> DEL SERVICIO
+        </h2>
+        <p class="text-center font-2" style="letter-spacing: 25px;">
+          TECNOLOGÍAS
+        </p>
+
+        <div class="flex align-center gap-3 mt-4">
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-1.png"
+              alt="Icono Servidores"
+              slot="img"
+            />
+            <span slot="text">Servidores</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-2.png"
+              alt="Icono Redes"
+              slot="img"
+            />
+            <span slot="text">Redes</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-3.png"
+              alt="Icono Apps"
+              slot="img"
+            />
+            <span slot="text">Apps</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-4.png"
+              alt="Icono BD"
+              slot="img"
+            />
+            <span slot="text">BD</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-5.png"
+              alt="Icono EndPints"
+              slot="img"
+            />
+            <span slot="text">EndPints</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-6.png"
+              alt="Icono IAAS"
+              slot="img"
+            />
+            <span slot="text">IAAS</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-7.png"
+              alt="Icono PAAS"
+              slot="img"
+            />
+            <span slot="text">PAAS</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-8.png"
+              alt="Icono SAAS"
+              slot="img"
+            />
+            <span slot="text">SAAS</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="../img/serv-agile-alcance-icon-9.png"
+              alt="Icono Micro Servicios"
+              slot="img"
+            />
+            <span slot="text">Micro Servicios</span>
+          </AlcanceIcon>
+        </div>
+        <div
+          class="card-gray content-image mt-5 flex align-center gap-5 font-light"
+          style="background-image:url('img/fondo-card.png'); background-attachment: unset;">
+          <h3 class="font-4">
+            Sustituimos las actividades de tus agentes
+            <span class="color-verde"> L1 </span> y
+            <span class="color-verde"> L2 </span>
+            con nuestros técnicos digitales<span class="color-verde">.</span>
+          </h3>
+          <div class="text-center item-line-agente" style="min-width: 120px;">
+            <img src="img/person-lap.png" alt="Icono user lap" />
+            <br />
+            <strong>L1</strong> técnico digital
+          </div>
+          <div class="text-center" style="min-width: 120px;">
+            <img src="img/person-lap.png" alt="Icono user lap" />
+            <br />
+            <strong>L2</strong> técnico digital
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-org content-image mt-6">
+      <div class="content-limit" style="padding-top: 100px;">
+        <div class="card-org">
+          <h2 class="text-center">ORGANIZACIÓN</h2>
+          <div class="flex gap-1 mt-2 justify-between">
+            <div class="item-org">
+              <img src="img/icon-agil-org-1.png" alt="Icono decorativo" />
+            </div>
+            <div class="item-org">
+              <img src="img/icon-agil-org-2.png" alt="Icono decorativo" />
+            </div>
+            <div class="item-org">
+              <img src="img/icon-agil-org-3.png" alt="Icono decorativo" />
+            </div>
+            <div class="item-org">
+              <img src="img/icon-agil-org-4.png" alt="Icono decorativo" />
+            </div>
+            <div class="item-org">
+              <img src="img/icon-agil-org-5.png" alt="Icono decorativo" />
+            </div>
+            <div class="item-org">
+              <img src="img/icon-agil-org-6.png" alt="Icono decorativo" />
+            </div>
+            <div class="item-org">
+              <img src="img/icon-agil-org-7.png" alt="Icono decorativo" />
+            </div>
+            <div class="item-org">
+              <img src="img/icon-agil-org-8.png" alt="Icono decorativo" />
+            </div>
+            <div class="item-org">
+              <img src="img/icon-agil-org-9.png" alt="Icono decorativo" />
+            </div>
+          </div>
+          <div class="flex justify-between mt-1 box-btns-org">
+            <button class="btn-org"> Observabilidad </button>
+            <button class="btn-org"> Monitoreo </button>
+            <button class="btn-org"> Topología </button>
+            <button class="btn-org"> Cambios </button>
+          </div>
+        </div>
+        <img src="img/agile-eventos.png" alt="Eventos" style="width: 100%;" />
+      </div>
+    </div>
+  </section>
 </Layout>

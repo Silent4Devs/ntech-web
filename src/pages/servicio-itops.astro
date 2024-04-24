@@ -1,7 +1,80 @@
 ---
+import "../css/servicio-itops.css";
 import Layout from "../layouts/layout.astro";
+
+import BtnReserva from "../components/btn-reserva.astro";
 ---
 
 <Layout>
-  <img src="../img/itops.png" alt="" style="width: 100%;" class="mt-5" />
+  <section id="inicio">
+    <div class="content content-inicio">
+      <div class="content-limit">
+        <img src="img/inicio-icon-serv-itops.png" alt="Icono Itops" />
+        <h1 class="mt-2">ITOPS<span>.</span></h1>
+        <p class="color-verde font-4 font-light mt-2">
+          En N.Technology te ayudamos a que puedas gestionar de la mejor manera
+          tus activos de TI.
+        </p>
+        <div class="mt-2">
+          <BtnReserva />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-consult">
+      <div class="content-limit">
+        <article class="card-gray">
+          <div class="flex justify-between align-center">
+            <h2>
+              Contamos con servicios de consultoría, implementación y soporte de
+              herramientas de ITOM e ITSM bajo las mejores prácticas y con
+              diferentes fabricantes y recursos certificados para adecuarnos a
+              tus necesidades específicas<span class="color-verde">.</span>
+            </h2>
+            <div>
+              <img
+                src="img/serv-itops-consult.png"
+                alt="Icono Servicio de consultoría"
+              />
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-brinda">
+      <div class="content-limit mt-4">
+        <div class="flex justify-center gap-6 box-brindas">
+          <article>
+            <h2>Implementación y configuración</h2>
+            <hr style="width: 50px;" />
+            <p>
+              Brindamos servicios de implementación y configuración de
+              herramientas de observabilidad y gestión de servicios.
+            </p>
+          </article>
+          <article>
+            <h2>Mantenimiento y soporte</h2>
+            <hr style="width: 50px;" />
+            <p>
+              Brindamos servicios continuos de mantenimiento y soporte que
+              incluyen actualizaciones periódicas, corrección de errores y
+              soporte.
+            </p>
+          </article>
+          <article>
+            <h2>Entrenamiento y educación</h2>
+            <hr style="width: 50px;" />
+            <p>
+              Ofrecemos servicios de capacitación y educación que incluyen
+              sesiones de capacitación, tutoriales en línea y recursos
+              educativos personalizados.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
