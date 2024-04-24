@@ -1,0 +1,9 @@
+.content-inicio{
+    background-image: url('../img/fondo-itops.png');
+}
+.box-brindas article{
+    width: 245px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgb(14, 14, 14) 70%, rgb(38, 38, 38) 100%);
+    padding-bottom: 100px;
+}
