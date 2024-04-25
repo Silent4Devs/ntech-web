@@ -1,0 +1,21 @@
+h1,
+h2 {
+  font-size: 45px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+h1::after,
+h2::after {
+  content: ".";
+  color: var(--verde);
+}
+p {
+  font-family: "Sofia Pro light";
+}
+.card-gray {
+  padding: 80px;
+}
+hr {
+  border-color: #282828 !important;
+  margin: 60px 0px;
+}

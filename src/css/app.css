@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../fonts/SofiaProLight.otf') format('woff2');
+    src: url('../../public/fonts/SofiaProLight.otf') format('woff2');
 }
 
 @font-face {
     font-family: 'Sofia Pro light';
-    src: url('../fonts/SofiaProExtraLight.otf') format('woff2');
+    src: url('../../public/fonts/SofiaProExtraLight.otf') format('woff2');
 }
 
 @font-face {
     font-family: 'Sofia Pro bold';
-    src: url('../fonts/SofiaProBold.otf') format('woff2');
+    src: url('../../public/fonts/SofiaProBold.otf') format('woff2');
 }
 
 :root {
@@ -395,7 +395,7 @@ header nav {
     opacity: 0;
 }
 
-header .line-back-header {
+header:hover .line-back-header {
     opacity: 1;
 }
 

@@ -1,5 +1,5 @@
 .content-inicio{
-    background-image: url('../img/fondo-nosotros.png');
+    background-image: url('../../public/img/fondo-nosotros.png');
 }
 .mano-robot{
     height: 500px;
@@ -16,12 +16,12 @@
     transform: translate(30%, -40%);
 }
 .content.content-evolucion{
-    background-image: url('../img/fondo-evolucion.png');
+    background-image: url('../../public/img/fondo-evolucion.png');
     padding-top: 150px;
     padding-bottom: 150px;
 }
 .card-open{
-    background-image: url('../img/fondo-open.png');
+    background-image: url('../../public/img/fondo-open.png');
     background-color: #00000000;
     max-width: 1500px;
     width: 100%;
