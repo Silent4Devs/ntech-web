@@ -5,7 +5,7 @@ import "../css/app.css";
 <html lang="es-MX">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../../public/img/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>ntechnology</title>
@@ -19,13 +19,13 @@ import "../css/app.css";
         <button class="nav-item btn-servs-options">
           <span>Servicios</span>
           <ul class="header-list-servs">
-            <li><a href="">ITOps Autónomo</a></li>
+            <!-- <li><a href="">ITOps Autónomo</a></li> -->
             <li><a href="/servicio-itops/">ITOPS</a></li>
-            <li><a href="">Nube Pública</a></li>
+            <!-- <li><a href="">Nube Pública</a></li> -->
             <li><a href="/servicio-nube-privada/">Nube Privada</a></li>
             <li><a href="/servicio-multicloud/">Data y ML</a></li>
-            <li><a href="">Soluciones de Industria</a></li>
-            <li><a href="">Hardware</a></li>
+            <!-- <li><a href="">Soluciones de Industria</a></li> -->
+            <!-- <li><a href="">Hardware</a></li> -->
           </ul>
         </button>
         <a href="/nosotros/" class="nav-item"><span> Nosotros </span></a>
@@ -37,7 +37,22 @@ import "../css/app.css";
         >
         <a href="#footer" class="nav-item"><span>Contacto</span></a>
       </nav>
+      <hr class="line-back-header" />
     </header>
+    <script>
+      let navItems = document.querySelectorAll(".nav-item");
+      let line = document.querySelector(".line-back-header") as HTMLElement;
+
+      navItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          const { left, width } = item.getBoundingClientRect();
+          const { clientWidth } = item;
+
+          line.style.setProperty("left", left + 15 + "px");
+          line.style.setProperty("width", width - 30 + "px");
+        });
+      });
+    </script>
     <main>
       <slot />
     </main>

@@ -1,5 +1,5 @@
 .content-inicio{
-    background-image: url('../img/fondo-agileops.png');
+    background-image: url('../../public/img/fondo-agileops.png');
 }
 .title-indicadores{
     font-weight: lighter;
@@ -19,7 +19,7 @@
     opacity: 0.6;
 }
 .content-proactivas{
-    background-image: url('../img/fondo-grani.png');
+    background-image: url('../../public/img/fondo-grani.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -82,5 +82,5 @@
     font-family: 'Sofia Pro light';
 }
 .content-org{
-    background-image: url('img/fondo-eventos.png');
+    background-image: url('../../public/img/fondo-eventos.png');
 }

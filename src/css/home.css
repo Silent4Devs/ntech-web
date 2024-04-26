@@ -1,5 +1,5 @@
 .content-inicio {
-    background-image: url('../img/fondo-mundo.png');
+    background-image: url('../../public/img/fondo-mundo.png');
 }
 
 .content-inicio * {
@@ -85,7 +85,7 @@
 }
 
 .card-gray-gran {
-    background-image: url('../img/fondo-card.png');
+    background-image: url('../../public/img/fondo-card.png');
     background-size: cover;
     width: 1000px;
     margin: auto;
