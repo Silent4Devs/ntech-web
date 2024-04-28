@@ -1,0 +1,150 @@
+---
+import Layout from "../layouts/layout.astro";
+
+import "../css/porque.css";
+
+import BtnReserva from "../components/btn-reserva.astro";
+---
+
+<Layout>
+  <section id="inicio">
+    <div class="content content-inicio">
+      <h1>POR QUÉ N<span>.</span>TECHNOLOGY</h1>
+      <p class="p-inicio">
+        Eliminamos la complejidad de las iniciativas y operaciones <br />
+        de TI con nuestros servicios y plataformas.
+      </p>
+      <BtnReserva />
+    </div>
+  </section>
+  <section>
+    <div class="content content-ti">
+      <div class="content-limit">
+        <div class="card-gray flex justify-between gap-3">
+          <p class="font-bold font-3">
+            A través de una combinación de tecnologías propietarias y alianzas
+            estratégicas, nuestro equipo de ingenieros y nuestros procesos
+            especializados han dado lugar a una gama de servicios diseñados para
+            optimizar las operaciones de TI<span class="color-verde">.</span>
+          </p>
+          <div
+            class="flex justify-center align-center"
+            style="min-width: 250px;">
+            <img
+              src="../img/mundo-tuerca.png"
+              alt="Planeta"
+              style="width: 100%;"
+            />
+          </div>
+          <p class="font-light font-3">
+            Resultando en la reducción de costos operativos, un mejor
+            rendimiento y disponibilidad de aplicaciones y servicios brindando
+            mayor agilitad para enfrentar los retos de negocio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-alianzas">
+      <div class="content-limit mt-6">
+        <div class="flex align-center" style=" justify-content: space-between;">
+          <img src="../img/partners/Ntech_Recorte-7-8.png" alt="Logo Alibaba" />
+          <img src="../img/partners/Ntech_Recorte-7-3.png" alt="Logo Oracle" />
+          <img src="../img/partners/Ntech_Recorte-7-7.png" alt="Logo Kaytus" />
+          <img
+            src="../img/partners/Ntech_Recorte-7-6.png"
+            alt="Logo Atlassian"
+          />
+        </div>
+        <div class="flex align-center justify-center mt-3 gap-5">
+          <img src="../img/partners/Ntech_Recorte-7-9.png" alt="Logo Manage" />
+          <img
+            src="../img/partners/Ntech_Recorte-7-2.png"
+            alt="Logo RocketBot"
+          />
+          <img
+            src="../img/partners/Ntech_Recorte-7-1.png"
+            alt="Logo Microsoft"
+          />
+        </div>
+        <div
+          class="flex align-center justify-center mt-3 gap-5"
+          style="margin-left: -200px;">
+          <img src="../img/partners/Ntech_Recorte-7-5.png" alt="Logo bmc" />
+          <img src="../img/partners/Ntech_Recorte-7-4.png" alt="Logo Zabbix" />
+          <img
+            src="../img/partners/Ntech_Recorte-7-10.png"
+            alt="Logo Red Hat"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-proces">
+      <div class="content-limit mt-6" style="width: 850px;">
+        <p class="font-light font-4 text-center">
+          Los procesos que componen nuestros diferentes servicios se
+          <strong>
+            encuentran certificados bajo las siguientes normas y estándares
+            internacionales
+          </strong>
+          que garantizan Ia gestión, seguridad y calidad de ellos.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-isos">
+      <div class="content-limit mt-6">
+        <div class="flex gap-2 justify-center box-isos gap-6">
+          <img src="../img/iso-20001.png" alt="Iso 20001" />
+          <img src="../img/iso-27001.png" alt="27001" />
+          <img src="../img/iso-9001.png" alt="9001" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-ayudamos">
+      <div class="content-limit mt-6">
+        <div class="card-gray" style="padding-bottom: 180px;">
+          <h2 class="text-center font-5">¿CÓMO TE AYUDAMOS?</h2>
+        </div>
+        <div class="flex justify-center gap-6 box-columns-green">
+          <div class="column-green">
+            <img
+              src="../img/ayuda-msp.png"
+              alt="Msp"
+              style="transform: scale(93%) translateY(-27px);"
+            />
+            <p class="text-center" style="">
+              Ayudamos a los proveedores de servicio a ampliar su oferta,
+              incrementar niveles de servicio a la vez que reducimos sus costos
+              operativos maximizando su utilidad.
+            </p>
+          </div>
+          <div class="column-green">
+            <img src="../img/ayuda-enterprise.png" alt="Enterprise" />
+            <p class="text-center" style="">
+              Ayudamos a las grandes empresas a gestionar su departamento e
+              iniciativas de TI modernizando, eficientando su operación,
+              brindando estabilidad estabilidad y recortando costes operativos
+              para que se puedan enfocar en las áreas del negocio que más valor
+              aportan para su giro.
+            </p>
+          </div>
+          <div class="column-green">
+            <img src="../img/ayuda-pyme.png" alt="Pyme" />
+            <p class="text-center" style="">
+              Combinamos una gama de servicios de nivel empresarial en paquetes
+              flexibles a costos accesibles, que permite a las PYMES aprovechar
+              la tecnología e impulsar resultados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
