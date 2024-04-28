@@ -1,5 +1,12 @@
 ---
 import "../css/app.css";
+
+const { currentLocale } = Astro;
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils.ts";
+
+const lang = getLangFromUrl(Astro.url);
+const tl = useTranslations(lang);
 ---
 
 <html lang="es-MX">
@@ -17,25 +24,29 @@ import "../css/app.css";
           <img src="../img/logo.png" alt="Logo Ntechnology" />
         </a>
         <button class="nav-item btn-servs-options">
-          <span>Servicios</span>
+          <span>{tl("nav.servicios")}</span>
           <ul class="header-list-servs">
-            <!-- <li><a href="">ITOps Autónomo</a></li> -->
-            <li><a href="/servicio-itops/">ITOPS</a></li>
-            <!-- <li><a href="">Nube Pública</a></li> -->
-            <li><a href="/servicio-nube-privada/">Nube Privada</a></li>
-            <li><a href="/servicio-multicloud/">Data y ML</a></li>
-            <!-- <li><a href="">Soluciones de Industria</a></li> -->
-            <!-- <li><a href="">Hardware</a></li> -->
+            <li><a href="">{tl("serv.itopsAuto")}</a></li>
+            <li><a href="/servicio-itops/">{tl("serv.itops")}</a></li>
+            <li><a href="">{tl("serv.nubePublica")}</a></li>
+            <li>
+              <a href="/servicio-nube-privada/">{tl("serv.nubePrivada")}</a>
+            </li>
+            <li><a href="/servicio-multicloud/">{tl("serv.dataMl")}</a></li>
+            <li><a href="">{tl("serv.industria")}</a></li>
+            <li><a href="">Hardware</a></li>
           </ul>
         </button>
-        <a href="/nosotros/" class="nav-item"><span> Nosotros </span></a>
+        <a href="/nosotros/" class="nav-item"
+          ><span> {tl("nav.nosotros")} </span></a
+        >
         <a href="/porque-ntechnology/" class="nav-item"
-          ><span>Por qué Ntechnology</span></a
+          ><span>{tl("nav.porque")}</span></a
         >
         <a href="https://n.technology/news/" class="nav-item" target="_blank"
           ><span>Blog</span></a
         >
-        <a href="#footer" class="nav-item"><span>Contacto</span></a>
+        <a href="#footer" class="nav-item"><span>{tl("nav.contacto")}</span></a>
       </nav>
       <hr class="line-back-header" />
     </header>
@@ -97,12 +108,14 @@ import "../css/app.css";
         <div>
           <a
             href="https://www.linkedin.com/company/ntechnologymx/"
-            target="_blank">
+            target="_blank"
+          >
             <img src="../img/logo.png" alt="Logo Ntech" class="logo-footer" />
 
             <div
               class="flex align-center mt-1"
-              style="justify-content: flex-end;">
+              style="justify-content: flex-end;"
+            >
               <div class="icon-footer">
                 <img src="/img/icon-link.png" alt="" />
               </div>
