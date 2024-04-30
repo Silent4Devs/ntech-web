@@ -3,6 +3,10 @@ import Layout from "../layouts/layout.astro";
 import "../css/home.css";
 
 import BtnReserva from "../components/btn-reserva.astro";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const tl = useTranslations(lang);
 ---
 
 <Layout>

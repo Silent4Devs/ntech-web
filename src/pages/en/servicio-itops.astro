@@ -1,22 +1,22 @@
 ---
-import Layout from "../layouts/layout.astro";
+import Layout from "../../layouts/layout.astro";
 
-import "../css/servicio-itops.css";
+import "../../css/servicio-itops.css";
 
-import BtnReserva from "../components/btn-reserva.astro";
+import BtnReserva from "../../components/btn-reserva.astro";
+import AlcanceIcon from "../../components/serv-agileops-alcance-icon.astro";
 ---
 
 <Layout>
-  <img src="../img/itops.png" class="mt-5" alt="img" style="width: 100%;" />
+  <!-- <img src="../img/itops.png" class="mt-5" alt="img" style="width: 100%;" /> -->
 
-  <!-- <section id="inicio">
+  <section id="inicio">
     <div class="content content-inicio">
       <div class="content-limit">
-        <img src="img/inicio-icon-serv-itops.png" alt="Icono Itops" />
+        <img src="/img/inicio-icon-serv-itops.png" alt="Icono Itops" />
         <h1 class="mt-2">ITOPS<span>.</span></h1>
         <p class="color-verde font-4 font-light mt-2">
-          En N.Technology te ayudamos a que puedas gestionar de la mejor manera
-          tus activos de TI.
+          We help you manage your IT assets in the best way.
         </p>
         <div class="mt-2">
           <BtnReserva />
@@ -30,14 +30,14 @@ import BtnReserva from "../components/btn-reserva.astro";
         <article class="card-gray">
           <div class="flex justify-between align-center">
             <h2>
-              Contamos con servicios de consultoría, implementación y soporte de
-              herramientas de ITOM e ITSM bajo las mejores prácticas y con
-              diferentes fabricantes y recursos certificados para adecuarnos a
-              tus necesidades específicas<span class="color-verde">.</span>
+              We have consulting, implementation and support services for ITOM
+              and ITSM tools under best practices and with different
+              manufacturers and certified resources to adapt to your specific
+              needs<span class="color-verde">.</span>
             </h2>
             <div>
               <img
-                src="img/serv-itops-consult.png"
+                src="/img/serv-itops-consult.png"
                 alt="Icono Servicio de consultoría"
               />
             </div>
@@ -51,33 +51,213 @@ import BtnReserva from "../components/btn-reserva.astro";
       <div class="content-limit mt-4">
         <div class="flex justify-center gap-6 box-brindas">
           <article>
-            <h2>Implementación y configuración</h2>
+            <h2>Implementation and configuration</h2>
             <hr style="width: 50px;" />
             <p>
-              Brindamos servicios de implementación y configuración de
-              herramientas de observabilidad y gestión de servicios.
+              We provide implementation and configuration services for
+              observability and service management tools.
             </p>
           </article>
           <article>
-            <h2>Mantenimiento y soporte</h2>
+            <h2>Maintenance and support</h2>
             <hr style="width: 50px;" />
             <p>
-              Brindamos servicios continuos de mantenimiento y soporte que
-              incluyen actualizaciones periódicas, corrección de errores y
-              soporte.
+              We provide ongoing maintenance and support services including
+              regular updates, bug fixes, and support.
             </p>
           </article>
           <article>
             <h2>Entrenamiento y educación</h2>
             <hr style="width: 50px;" />
             <p>
-              Ofrecemos servicios de capacitación y educación que incluyen
-              sesiones de capacitación, tutoriales en línea y recursos
-              educativos personalizados.
+              We Offer training and education sewices including training
+              sessions, online tutorials, and customized educational resources.
             </p>
           </article>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
+  <section>
+    <div class="content content-itom">
+      <div class="content-limit mt-6">
+        <h2 class="text-center font-6">
+          <span class="color-verde">ITOM</span>
+          <br />
+          IT Operations Management<span class="color-verde">.</span>
+        </h2>
+        <h3 class="font-light font-3 text-center letter-space mt-3">SCOPES</h3>
+        <div class="flex justify-center mt-2 gap-6 flex-wrap">
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-aitom-icon-1.png"
+              alt="Icono Monitoreo Web"
+              slot="img"
+            />
+            <span slot="text">Web Monitoring</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-aitom-icon-2.png"
+              alt="Icono Monitoreo Servidores"
+              slot="img"
+            />
+            <span slot="text">Monitoring Servers</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-aitom-icon-3.png"
+              alt="Icono Monitoreo Nube"
+              slot="img"
+            />
+            <span slot="text">Cloud Monitoring</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-aitom-icon-4.png"
+              alt="Icono Monitoreo Red"
+              slot="img"
+            />
+            <span slot="text">Net Monitoring</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-aitom-icon-5.png"
+              alt="Icono Monitoreo Aplicaciones"
+              slot="img"
+            />
+            <span slot="text">Apps Monitoring</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-aitom-icon-6.png"
+              alt="Icono Monitoreo UX"
+              slot="img"
+            />
+            <span slot="text">UX Monitoring</span>
+          </AlcanceIcon>
+        </div>
+        <h3
+          class="font-light font-3 text-center letter-space mt-3 color-verde mt-4">
+          PRODUCTS
+        </h3>
+        <div class="flex justify-center mt-3">
+          <img
+            src="/img/partners/Ntech_Recorte-7-9.png"
+            alt="Logo ManageEngine"
+          />
+          <img src="/img/partners/Ntech_Recorte-7-5.png" alt="Logo bmc" />
+          <img src="/img/partners/Ntech_Recorte-7-4.png" alt="Logo zabbix" />
+        </div>
+
+        <hr class="mt-6" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-itom">
+      <div class="content-limit mt-6">
+        <h2 class="text-center font-6">
+          <span class="color-verde">ITSM</span>
+          <br />
+          IT service management<span class="color-verde">.</span>
+        </h2>
+        <h3 class="font-light font-3 text-center letter-space mt-3">SCOPES</h3>
+        <div class="flex justify-center mt-2 gap-6 flex-wrap">
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-1.png"
+              alt="Icono Monitoreo Web"
+              slot="img"
+            />
+            <span slot="text">Incidents</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-2.png"
+              alt="Icono Monitoreo Servidores"
+              slot="img"
+            />
+            <span slot="text">Services</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-3.png"
+              alt="Icono Monitoreo Nube"
+              slot="img"
+            />
+            <span slot="text">Knowledge</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-4.png"
+              alt="Icono Monitoreo Red"
+              slot="img"
+            />
+            <span slot="text">Problems</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-5.png"
+              alt="Icono Monitoreo Aplicaciones"
+              slot="img"
+            />
+            <span slot="text">Changes</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-6.png"
+              alt="Icono Monitoreo UX"
+              slot="img"
+            />
+            <span slot="text">Actives</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-7.png"
+              alt="Icono Monitoreo UX"
+              slot="img"
+            />
+            <span slot="text">Reports</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-8.png"
+              alt="Icono Monitoreo UX"
+              slot="img"
+            />
+            <span slot="text">Integration</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-9.png"
+              alt="Icono Monitoreo UX"
+              slot="img"
+            />
+            <span slot="text">Projects</span>
+          </AlcanceIcon>
+          <AlcanceIcon>
+            <img
+              src="/img/serv-itops-itsm-icon-10.png"
+              alt="Icono Monitoreo UX"
+              slot="img"
+            />
+            <span slot="text">Discovery</span>
+          </AlcanceIcon>
+        </div>
+        <h3
+          class="font-light font-3 text-center letter-space mt-3 color-verde mt-4">
+          PRODUCTS
+        </h3>
+        <div class="flex justify-center mt-3 flex-wrap">
+          <img
+            src="/img/partners/Ntech_Recorte-7-9.png"
+            alt="Logo ManageEngine"
+          />
+          <img src="/img/partners/Ntech_Recorte-7-4.png" alt="Logo zabbix" />
+          <img src="/img/partners/Ntech_Recorte-7-6.png" alt="Logo atlassian" />
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
