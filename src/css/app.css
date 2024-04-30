@@ -103,6 +103,7 @@ strong {
 /* clases globales ------------------------ */
 .font-light {
     font-family: 'Sofia Pro light';
+    font-weight: lighter;
 }
 
 .font-bold {
@@ -128,6 +129,8 @@ strong {
     transition: 0.5s;
     font-family: 'Sofia Pro light';
     color: #ddd;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn-main:hover {
@@ -172,7 +175,9 @@ strong {
 .flex {
     display: flex;
 }
-
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .justify-center {
     justify-content: center;
 }
@@ -441,6 +446,14 @@ header:hover .line-back-header {
 
 .header-list-servs li:hover a::before {
     width: 10px;
+}
+
+.switch-lang{
+    font-size: 14px;
+}
+.switch-lang img{
+    width: 25px;
+    margin-left: 10px;
 }
 
 .btn {

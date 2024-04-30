@@ -1,1 +1,11 @@
-<a href="#" class="btn-main btn-reserva"> Reserva una Demo </a>
+---
+import "../css/app.css";
+
+const { currentLocale } = Astro;
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const tl = useTranslations(lang);
+---
+
+<a href="#" class="btn-main btn-reserva"> {tl("btn.inicio")} </a>
