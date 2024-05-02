@@ -24,6 +24,8 @@ export const ui = {
     'serv.industria' : 'Industrial Monitoring',
 
     'btn.inicio' : 'Book a free consultation',
+
+    'footer.politica' : 'Privacy Policy',
   },
   es: {
     // header
@@ -42,5 +44,7 @@ export const ui = {
     'serv.industria' : 'Soluciones de Industria',
 
     'btn.inicio' : 'Reserva una Demo',
+
+    'footer.politica' : 'Política de privacidad',
   },
 } as const;
