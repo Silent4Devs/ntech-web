@@ -30,7 +30,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
         <button class="nav-item btn-servs-options">
           <span>{tl("nav.servicios")}</span>
           <ul class="header-list-servs">
-            <!-- <li><a href="">{tl("serv.itopsAuto")}</a></li> -->
+            <li><a href="">{tl("serv.itopsAuto")}</a></li>
             <li>
               <a
                 href={getRelativeLocaleUrl(
@@ -39,7 +39,13 @@ import { getRelativeLocaleUrl } from "astro:i18n";
                 )}>{tl("serv.itops")}</a
               >
             </li>
-            <!-- <li><a href="">{tl("serv.nubePublica")}</a></li> -->
+            <li>
+              <a
+                href={getRelativeLocaleUrl(
+                  currentLocale ?? "",
+                  "servicio-multicloud"
+                )}>{tl("serv.nubePublica")}</a>
+            </li>
             <li>
               <a
                 href={getRelativeLocaleUrl(
@@ -49,15 +55,11 @@ import { getRelativeLocaleUrl } from "astro:i18n";
               >
             </li>
             <li>
-              <a
-                href={getRelativeLocaleUrl(
-                  currentLocale ?? "",
-                  "servicio-multicloud"
-                )}>{tl("serv.dataMl")}</a
-              >
+              <a href="">{tl("serv.dataMl")}</a>
             </li>
-            <!-- <li><a href="">{tl("serv.industria")}</a></li> -->
-            <!-- <li><a href="">Hardware</a></li> -->
+            <li><a href="">Monitoreo Industrial</a></li>
+            <li><a href="">{tl("serv.industria")}</a></li>
+            <li><a href="">Hardware</a></li>
           </ul>
         </button>
         <a
