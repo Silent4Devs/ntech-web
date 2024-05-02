@@ -1,7 +1,212 @@
 ---
 import Layout from "../layouts/layout.astro";
+import "../css/servicio-nube-privada.css";
+
+import BtnReserva from "../components/btn-reserva.astro";
 ---
 
 <Layout>
-  <img src="../img/nube-privada.png" alt="" style="width: 100%;" class="mt-5" />
+  <!-- <img src="../img/nube-privada.png" alt="" style="width: 100%;" class="mt-5" /> -->
+
+  <section id="inicio">
+    <div class="content content-inicio">
+      <div class="content-limit">
+        <img src="/img/inicio-icon-serv-itops.png" alt="Icono Itops" />
+        <h1 class="mt-2">NUBE PRIVADA<span>.</span></h1>
+        <p class="color-verde font-4 font-light mt-2">
+          Nuestro servicio de nube privada y/o híbrida está diseñado para
+          organizaciones que exigen el más alto nivel de control sobre sus
+          datos, al tiempo que desean aprovechar las ventajas de las plataformas
+          de nube pública.
+        </p>
+        <div class="mt-2">
+          <BtnReserva />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-ti">
+      <div class="content-limit">
+        <div class="card-gray flex justify-between gap-3">
+          <p class="font-bold font-2">
+            Ofrecemos una solución que combina la seguridad y la exclusividad de
+            una infraestructura de nube privada con la escalabilidad, la
+            innovación y la eficiencia de costes de Ia nube pública<span
+              class="color-verde">.</span
+            >
+          </p>
+          <div
+            class="flex justify-center align-center"
+            style="min-width: 250px;">
+            <img
+              src="../img/shield-cloud.png"
+              alt="Planeta"
+              style="width: 300px;"
+            />
+          </div>
+          <div>
+            <p class="font-light font-1">
+              Esto permite a nuestros clientes disfrutar de una gestión de datos
+              segura y conforme a la normativa, junto con la flexibilidad para
+              expandir recursos rápidamente y adoptar servicios de vanguardia
+              según sea necesario, garantizando así una plataforma óptima para
+              el crecimiento y la innovación en un entorno tecnológico en
+              constante evolución<span class="color-verde">.</span>
+            </p>
+            <a href="" class="btn-main">Chatea con un experto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-apsara">
+      <div class="content-limit mt-6">
+        <h2 class="text-center font-5">
+          Nuestra solución Apsara Stack<span class="color-verde">.</span>
+        </h2>
+        <p class="text-center font-light font-2" style="line-height: 40px;">
+          Apsara Stack es una solución estable, segura, abierta e inteligente
+          que proporciona a los clientes de Ia industria, como el sector de
+          servicios públicos, empresas y operadores, una experiencia de servicio
+          consistente y con poderosas tecnologías en Ia nube. Apsara Stack
+          combina capacidades técnicas líderes en Ia región de Asia y el
+          Pacífico con capacidades operativas integrales. Puede utilizar Apsara
+          Stack para proporcionar una gama completa de servicios en la nube para
+          usted y para terceros
+        </p>
+
+        <div class="flex justify-center gap-6 box-brindas mt-4">
+          <article>
+            <h2>Estable</h2>
+            <hr style="width: 50px;" />
+            <p class="font-light">
+              La Nube pública ofrece solución de una recuperación ante desastres
+              optimizada y basada en comentarios de usuarios para garantizar Ia
+              continuidad del negocio.
+            </p>
+          </article>
+          <article>
+            <h2>Segura</h2>
+            <hr style="width: 50px;" />
+            <p class="font-light">
+              La Nube pública cuenta con una arquitectura de seguridad avanzada,
+              siendo la primera en obtener certificaciones de alto nivel de
+              protección.
+            </p>
+          </article>
+          <article>
+            <h2>Abierta</h2>
+            <hr style="width: 50px;" />
+            <p class="font-light">
+              La Nube pública proporciona APIS de desarrollo compatibles con
+              estándares.
+            </p>
+            <p class="font-light">
+              La Nube pública es flexible y compatible con una variedad de
+              hardware, permitiendo la implementación de múltiples servicios en
+              el centro de datos.
+            </p>
+          </article>
+          <article>
+            <h2>Inteligente</h2>
+            <hr style="width: 50px;" />
+            <p class="font-light">
+              La Nube pública ofrece plataforma una empresarial con capacidades
+              de gestión, control monitoreo y basadas en algoritmos de
+              inteligencia artificial probados a gran escala.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-enterprise">
+      <div class="content-limit mt-6">
+        <h2 class="text-center font-5">
+          Edición Enterprise<span class="color-verde">.</span>
+        </h2>
+        <p class="text-center font-light font-2" style="line-height: 40px;">
+          Nube pública Enterprise Edition proporciona una plataforma Full-Stack
+          en la nube para clientes de mediana y gran escala de negocio. Esta
+          edición permite utilizar las mismas funciones que los servicios de
+          Nube pública en el entorno Nube pública. Nube pública Enterprise
+          Edition se puede utilizar para crear nubes multinivel a gran escala
+          para sectores de servicios públicos y empresariales o para nubes
+          industriales. Nube pública Enterprise Edition también proporciona una
+          plataforma de nube liviana y miniaturizada para ayudar a los usuarios
+          básicos a migrar sus aplicaciones a la nube.
+        </p>
+        <div class="text-center mt-2">
+          <div class="card-num">
+            <span class="color-verde">Número recomendado de servidores:</span>
+            20 a 10.000
+          </div>
+        </div>
+
+        <div class="mt-3 box-enter-priv gap-5">
+          <article>
+            <h3 class="font-3 flex align-center gap-3">
+              Escala bajo <br /> demanda
+              <img src="/img/icon-enter-private-1.png" alt="" />
+            </h3>
+            <p class="font-light">
+              La Nube pública es adecuada para clientes con operaciones a gran
+              escala y permite implementar hasta 10.000 servidores en una
+              región, con una plataforma liviana para la migración de
+              aplicaciones.
+            </p>
+          </article>
+          <article>
+            <h3 class="font-3 flex align-center gap-3">
+              Seguridad y <br /> estabilidad
+              <img src="/img/icon-enter-private-2.png" alt="" />
+            </h3>
+            <p class="font-light">
+              Nube pública ofrece una arquitectura de seguridad nativa,
+              certificaciones de seguridad de alto nivel y redundancia
+              geográfica activa para garantizar la continuidad del negocio
+            </p>
+          </article>
+          <article>
+            <h3 class="font-3 flex align-center gap-3">
+              Solución <br /> integral
+              <img src="/img/icon-enter-private-3.png" alt="" />
+            </h3>
+            <p class="font-light">
+              La Nube pública proporciona una amplia gama de servicios y una
+              solución híbrida para diferentes escenarios, permitiendo a los
+              clientes aprovechar fácilmente las actualizaciones y ejecutar
+              aplicaciones en diferentes entornos.
+            </p>
+          </article>
+          <article>
+            <h3 class="font-3 flex align-center gap-3">
+              Amplia experiencia <br /> en la industria
+              <img src="/img/icon-enter-private-4.png" alt="" />
+            </h3>
+            <p class="font-light">
+              Amplia experiencia en la industria: La Nube cuenta con experiencia
+              en la construcción de plataformas Full-Stack en la nube para
+              sectores públicos y financieros, facilitando una migración segura
+              y estable para empresas de mediana y gran escala.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-apsara">
+      <div class="content-limit mt-5">
+        <img
+          src="/img/nube-privada-apsara.png"
+          alt="Apsara"
+          style="width: 100%;"
+        />
+      </div>
+    </div>
+  </section>
 </Layout>

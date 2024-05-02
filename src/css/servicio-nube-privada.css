@@ -1,0 +1,19 @@
+.content-inicio{
+    background-image: url('../../public/img/fondo-nube-privada.png');
+}
+.box-brindas article{
+    min-width: 245px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgb(14, 14, 14) 70%, rgb(38, 38, 38) 100%);
+}
+.card-num{
+    display: inline-block;
+    background-color: #1c1c1d;
+    padding: 20px 30px;
+    border-radius: 100px;
+}
+
+.box-enter-priv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
