@@ -38,7 +38,7 @@ export const ui = {
     // servicios
     'serv.itopsAuto' : 'ITOps Autónomo',
     'serv.itops' : 'ITOPS',
-    'serv.nubePublica' : 'Nube Pública',
+    'serv.nubePublica' : 'Multinube',
     'serv.nubePrivada' : 'Nube Privada',
     'serv.dataMl' : 'Data y ML',
     'serv.industria' : 'Soluciones de Industria',
