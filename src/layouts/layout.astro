@@ -30,6 +30,19 @@ import { getRelativeLocaleUrl } from "astro:i18n";
         <button class="nav-item btn-servs-options">
           <span>{tl("nav.servicios")}</span>
           <ul class="header-list-servs">
+            <style>
+              li a[href=""] {
+                background-color: brown;
+              }
+            </style>
+            <li>
+              <a
+                href={getRelativeLocaleUrl(
+                  currentLocale ?? "",
+                  "servicio-agileops"
+                )}>AgileOps</a
+              >
+            </li>
             <li><a href="">{tl("serv.itopsAuto")}</a></li>
             <li>
               <a
@@ -44,7 +57,8 @@ import { getRelativeLocaleUrl } from "astro:i18n";
                 href={getRelativeLocaleUrl(
                   currentLocale ?? "",
                   "servicio-multicloud"
-                )}>{tl("serv.nubePublica")}</a>
+                )}>{tl("serv.nubePublica")}</a
+              >
             </li>
             <li>
               <a
@@ -74,6 +88,11 @@ import { getRelativeLocaleUrl } from "astro:i18n";
           ><span>Blog</span></a
         >
         <a href="#footer" class="nav-item"><span>{tl("nav.contacto")}</span></a>
+
+        <a
+          href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
+          class="nav-item"><span>Fundadores</span></a
+        >
 
         <a
           href={getRelativeLocaleUrl("es" ?? "", "/")}
