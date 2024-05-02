@@ -1,40 +1,49 @@
-.content-inicio{
+.content-inicio {
     background-image: url('../../public/img/fondo-agileops.png');
 }
-.title-indicadores{
+
+.title-indicadores {
     font-weight: lighter;
     letter-spacing: 18px;
     text-align: center;
 }
+
 .box-border h3 span {
-  font-size: 36px;
+    font-size: 36px;
 }
-.content-indicadores{
+
+.content-indicadores {
     background-color: #0f0f10;
 }
-.box-up-down article{
+
+.box-up-down article {
     width: 230px;
 }
-.box-up-down article p small{
+
+.box-up-down article p small {
     opacity: 0.6;
 }
-.content-proactivas{
+
+.content-proactivas {
     background-image: url('../../public/img/fondo-grani.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.title-proactivas{
+
+.title-proactivas {
     width: 270px;
     text-wrap: wrap;
 }
-.box-proactivas{
+
+.box-proactivas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding-bottom: 100px;
 }
-.box-proactivas article{
+
+.box-proactivas article {
     width: 200px;
     height: 200px;
     padding: 20px;
@@ -43,28 +52,33 @@
     place-items: center;
     border-radius: 15px;
 }
-.box-proactivas article h2{
+
+.box-proactivas article h2 {
     margin: 0;
     font-size: 20px;
     text-align: center;
 }
-.box-proactivas article img{
+
+.box-proactivas article img {
     width: 50px;
 }
-.item-line-agente{
+
+.item-line-agente {
     position: relative;
 }
-.item-line-agente::before{
+
+.item-line-agente::before {
     content: "";
     position: absolute;
     width: 1px;
     height: 80%;
     background-color: #fff;
     right: -25px;
-    top: 10%;
+    top: ;
     opacity: 0.5;
 }
-.item-org{
+
+.item-org {
     width: 100px;
     height: 100px;
     background-color: #181819;
@@ -73,7 +87,8 @@
     border-radius: 15px;
     border: 1px solid #2f2f2f;
 }
-.btn-org{
+
+.btn-org {
     width: 200px;
     height: 50px;
     border: 1px solid var(--verde);
@@ -81,6 +96,7 @@
     font-size: 18px;
     font-family: 'Sofia Pro light';
 }
-.content-org{
+
+.content-org {
     background-image: url('../../public/img/fondo-eventos.png');
 }
