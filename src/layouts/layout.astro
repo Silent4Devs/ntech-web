@@ -23,8 +23,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
       <nav>
         <a
           href={getRelativeLocaleUrl(currentLocale ?? "", "/")}
-          class="logo-ntech"
-        >
+          class="logo-ntech">
           <img src="/img/logo.png" alt="Logo Ntechnology" />
         </a>
         <button class="nav-item btn-servs-options">
@@ -32,7 +31,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
           <ul class="header-list-servs">
             <style>
               li a[href=""] {
-                background-color: brown;
+                opacity: 0.3;
               }
             </style>
             <li>
@@ -40,10 +39,9 @@ import { getRelativeLocaleUrl } from "astro:i18n";
                 href={getRelativeLocaleUrl(
                   currentLocale ?? "",
                   "servicio-agileops"
-                )}>AgileOps</a
+                )}>{tl("serv.itopsAuto")}</a
               >
             </li>
-            <li><a href="">{tl("serv.itopsAuto")}</a></li>
             <li>
               <a
                 href={getRelativeLocaleUrl(
@@ -71,7 +69,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
             <li>
               <a href="">{tl("serv.dataMl")}</a>
             </li>
-            <li><a href="">Monitoreo Industrial</a></li>
+            <li><a href="">{tl("serv.monitoreo_industria")}</a></li>
             <li><a href="">{tl("serv.industria")}</a></li>
             <li><a href="">Hardware</a></li>
           </ul>
@@ -84,26 +82,25 @@ import { getRelativeLocaleUrl } from "astro:i18n";
           href={getRelativeLocaleUrl(currentLocale ?? "", "porque-ntechnology")}
           class="nav-item"><span>{tl("nav.porque")}</span></a
         >
+
+        <a
+          href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
+          class="nav-item"><span>{tl("nav.fundador")}</span></a
+        >
+
         <a href="https://n.technology/news/" class="nav-item" target="_blank"
           ><span>Blog</span></a
         >
         <a href="#footer" class="nav-item"><span>{tl("nav.contacto")}</span></a>
 
         <a
-          href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
-          class="nav-item"><span>Fundadores</span></a
-        >
-
-        <a
           href={getRelativeLocaleUrl("es" ?? "", "/")}
-          class="nav-item switch-lang"
-        >
+          class="nav-item switch-lang">
           <span>ES. <img src="/img/flag-mx.png" alt="Bandera méxico" /> </span>
         </a>
         <a
           href={getRelativeLocaleUrl("en" ?? "", "/")}
-          class="nav-item switch-lang"
-        >
+          class="nav-item switch-lang">
           <span>
             EN. <img src="/img/flag-us.png" alt="Bandera US" />
           </span>
@@ -169,14 +166,12 @@ import { getRelativeLocaleUrl } from "astro:i18n";
         <div>
           <a
             href="https://www.linkedin.com/company/ntechnologymx/"
-            target="_blank"
-          >
+            target="_blank">
             <img src="/img/logo.png" alt="Logo Ntech" class="logo-footer" />
 
             <div
               class="flex align-center mt-1"
-              style="justify-content: flex-end;"
-            >
+              style="justify-content: flex-end;">
               <div class="icon-footer">
                 <img src="/img/icon-link.png" alt="" />
               </div>
