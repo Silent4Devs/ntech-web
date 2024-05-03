@@ -10,8 +10,9 @@ export const ui = {
   en: {
     // header
     'nav.servicios': 'Services',
-    'nav.nosotros': 'Us',
+    'nav.nosotros': 'Us About',
     'nav.porque': 'Why Ntechnology',
+    'nav.fundador': 'Founder',
     'nav.blog': 'Blog',
     'nav.contacto': 'Contact',
 
@@ -21,7 +22,8 @@ export const ui = {
     'serv.nubePublica' : 'Public Cloud',
     'serv.nubePrivada' : 'Private Cloud',
     'serv.dataMl' : 'Data and ML',
-    'serv.industria' : 'Industrial Monitoring',
+    'serv.monitoreo_industria' : 'Industrial Monitoring',
+    'serv.industria' : 'Industrial Solutions',
 
     'btn.inicio' : 'Book a free consultation',
 
@@ -32,6 +34,7 @@ export const ui = {
     'nav.servicios': 'Servicios',
     'nav.nosotros': 'Nosotros',
     'nav.porque': 'Por qué Ntechnology',
+    'nav.fundador': 'Fundador',
     'nav.blog': 'Blog',
     'nav.contacto': 'Contacto',
 
@@ -41,6 +44,7 @@ export const ui = {
     'serv.nubePublica' : 'Multinube',
     'serv.nubePrivada' : 'Nube Privada',
     'serv.dataMl' : 'Data y ML',
+    'serv.monitoreo_industria' : 'Monitoreo de Industrial',
     'serv.industria' : 'Soluciones de Industria',
 
     'btn.inicio' : 'Reserva una Demo',
