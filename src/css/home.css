@@ -179,36 +179,23 @@
     margin-top: 200px;
 }
 
-.content-pasos {
-    width: 1000px;
-    margin: auto;
-    margin-top: 100px;
+.box-isos img{
+    width: 230px;
 }
-
-.box-items-pasos {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+.box-columns-green{
+    margin-top: -140px;
+    transform: translateX(40px);
 }
-
-.box-items-pasos {
-    transform: translateY(-200px);
+.box-columns-green img{
+    width: 250px;
 }
-
-.box-items-pasos img {
-    transform: scale(0.8);
+.column-green{
+    transform: translateX(40px);
+    width: 33.33%;
 }
-
-.box-items-pasos-info {
-    display: flex;
-    justify-content: space-around;
-}
-
-.box-items-pasos-info div {
-    width: 220px;
-    text-align: center;
-    line-height: 30px;
-    transform: translateY(-200px);
+.column-green p{
+    padding-right: 75px;
+    font-family: 'Sofia Pro light';
 }
 
 @media(max-width: 1700px) {
@@ -249,31 +236,31 @@
     }
 }
 
-.box-items-pasos img {
+.box-columns-green .column-green {
     animation: pasos-entry both;
     animation-timeline: view();
 }
 
-.box-items-pasos img:nth-child(1n) {
+.box-columns-green .column-green:nth-child(1n) {
     animation-range: entry 0% cover 20%;
 }
 
-.box-items-pasos img:nth-child(2n) {
+.box-columns-green .column-green:nth-child(2n) {
     animation-range: entry 20% cover 30%;
 }
 
-.box-items-pasos img:nth-child(3n) {
+.box-columns-green .column-green:nth-child(3n) {
     animation-range: entry 30% cover 50%;
 }
 
 @keyframes pasos-entry {
     0% {
-        transform: scale(0.8) translateY(150px);
+        transform: translateY(150px);
         opacity: 0;
     }
 
     100% {
-        transform: scale(0.8) translateY(0px);
+        transform: translateY(0px);
         opacity: 1;
     }
 }
