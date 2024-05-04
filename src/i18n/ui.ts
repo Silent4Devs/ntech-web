@@ -10,7 +10,7 @@ export const ui = {
   en: {
     // header
     'nav.servicios': 'Services',
-    'nav.nosotros': 'Us About',
+    'nav.nosotros': 'About Us',
     'nav.sobre_nosotros': 'Our Purpose',
     'nav.porque': 'Why Ntechnology',
     'nav.fundador': 'Founder',
