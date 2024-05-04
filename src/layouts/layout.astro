@@ -74,18 +74,26 @@ import { getRelativeLocaleUrl } from "astro:i18n";
             <li><a href="">Hardware</a></li>
           </ul>
         </button>
-        <a
-          href={getRelativeLocaleUrl(currentLocale ?? "", "nosotros")}
-          class="nav-item"><span> {tl("nav.nosotros")} </span></a
-        >
+
+        <button class="nav-item btn-servs-options">
+          <span>{tl("nav.nosotros")}</span>
+          <ul class="header-list-servs">
+            <li>
+              <a href={getRelativeLocaleUrl(currentLocale ?? "", "nosotros")}
+                >{tl("nav.sobre_nosotros")}</a
+              >
+            </li>
+            <li>
+              <a href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
+                >{tl("nav.fundador")}</a
+              >
+            </li>
+          </ul>
+        </button>
+
         <a
           href={getRelativeLocaleUrl(currentLocale ?? "", "porque-ntechnology")}
           class="nav-item"><span>{tl("nav.porque")}</span></a
-        >
-
-        <a
-          href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
-          class="nav-item"><span>{tl("nav.fundador")}</span></a
         >
 
         <a href="https://n.technology/news/" class="nav-item" target="_blank"

@@ -11,6 +11,7 @@ export const ui = {
     // header
     'nav.servicios': 'Services',
     'nav.nosotros': 'Us About',
+    'nav.sobre_nosotros': 'Our Purpose',
     'nav.porque': 'Why Ntechnology',
     'nav.fundador': 'Founder',
     'nav.blog': 'Blog',
@@ -33,6 +34,7 @@ export const ui = {
     // header
     'nav.servicios': 'Servicios',
     'nav.nosotros': 'Nosotros',
+    'nav.sobre_nosotros': 'Sobre Nosotros',
     'nav.porque': 'Por qué Ntechnology',
     'nav.fundador': 'Fundador',
     'nav.blog': 'Blog',
