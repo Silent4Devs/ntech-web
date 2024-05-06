@@ -4,14 +4,14 @@
 }
 
 .content-provi {
-    background-image: url('../img/fondo-car.png');
+    background-image: url('/img/fondo-car.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
 }
 
 .content-racing.content-image {
-    background-image: url('../img/fondo-racing.png');
+    background-image: url('/img/fondo-racing.png');
     padding-top: 80px;
     padding-bottom: 150px;
 }
