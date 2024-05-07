@@ -1,0 +1,91 @@
+---
+const { id } = Astro.props;
+---
+
+<style>
+  .box-card-pop.active {
+    visibility: visible;
+    opacity: 1;
+    backdrop-filter: opacity(1) blur(8px);
+  }
+  .box-card-pop {
+    visibility: hidden;
+    transition: 0.3s linear;
+    backdrop-filter: opacity(0);
+    transition-delay: 0.2s;
+  }
+  .box-card-pop.active article {
+    clip-path: circle(100% at 50% 50%);
+    transform: scale(1);
+  }
+  .box-card-pop article {
+    transition: 0.4s;
+    clip-path: circle(0% at 50% 50%);
+    transform: scale(0.5);
+  }
+  /* -------------------------- */
+
+  .box-card-pop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter:;
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+  }
+  .box-img-circle-icon {
+    min-width: 120px;
+    max-width: 120px;
+    height: 120px;
+    border-radius: 1000px;
+    display: grid;
+    place-content: center;
+    border: 4px solid var(--verde);
+  }
+  .box-img-circle-icon img {
+    filter: grayscale(100%) brightness(100%);
+  }
+  article {
+    width: 550px;
+    padding: 80px 50px;
+    position: absolute;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .icon-close {
+    top: 0px;
+    right: 0px;
+    padding: 15px;
+  }
+  .icon-close:hover {
+    transform: scale(1.2);
+  }
+  .icon-close img {
+    width: 30px;
+  }
+</style>
+<div class="box-card-pop" id={id}>
+  <article class="relative">
+    <button
+      class="absolute icon-close"
+      onclick="document.querySelector('.box-card-pop:hover').classList.remove('active');">
+      <img src="/img/close-icon.svg" alt="Icono cerrar" />
+    </button>
+    <div class="flex align-center justify-between gap-3">
+      <h2 class="font-5" style="margin: 0;">
+        <slot name="title" />
+      </h2>
+      <div class="box-img-circle-icon">
+        <slot name="image" />
+      </div>
+    </div>
+    <p class="mt-2 font-light font-1">
+      <slot name="text" />
+    </p>
+  </article>
+</div>

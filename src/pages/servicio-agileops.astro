@@ -6,11 +6,10 @@ import "../css/servicio-agileops.css";
 import BtnReserva from "../components/btn-reserva.astro";
 import Indicador from "../components/serv-agileops-indicadores.astro";
 import AlcanceIcon from "../components/serv-agileops-alcance-icon.astro";
+import CardPop from "../components/serv-agileops-cards-pops.astro";
 ---
 
 <Layout>
-  <!-- <img src="/img/agileops.png" alt="" style="width: 100%;" class="mt-5" /> -->
-
   <section>
     <div class="content content-inicio">
       <img src="/img/title-agileops.png" alt="AgileOps titulo" />
@@ -158,42 +157,112 @@ import AlcanceIcon from "../components/serv-agileops-alcance-icon.astro";
           />
         </div>
         <div class="box-proactivas mt-3">
-          <article onclick="">
+          <article
+            data-id="card-pop-1"
+            onclick="document.getElementById('card-pop-1').classList.add('active');">
             <img
               src="/img/icon-proa-1.png"
               alt="Icono Correlación de eventos"
             />
             <h2>Correlación de eventos</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-2').classList.add('active');">
             <img
               src="/img/icon-proa-2.png"
               alt="Icono Análisis de causa raíz"
             />
             <h2>Análisis de causa raíz</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-3').classList.add('active');">
             <img src="/img/icon-proa-3.png" alt="Icono Mapa de Impacto" />
             <h2>Mapa de <br /> Impacto</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-4').classList.add('active');">
             <img src="/img/icon-proa-4.png" alt="Icono Autoremediación" />
             <h2>Auto-remediación</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-5').classList.add('active');">
             <img src="/img/icon-proa-5.png" alt="Icono Cambios  autónomos" />
             <h2>Cambios <br /> autónomos</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-6').classList.add('active');">
             <img src="/img/icon-proa-6.png" alt="Icono Cambios  autónomos" />
             <h2>Solicitudes <br /> autónomas</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-7').classList.add('active');">
             <img src="/img/icon-proa-7.png" alt="Icono Cambios  autónomos" />
             <h2>Autogestión</h2>
           </article>
         </div>
       </div>
+
+      <CardPop id="card-pop-1">
+        <span slot="title">Correlación de eventos</span>
+        <div slot="image"><img src="/img/icon-proa-1.png" alt="Icono" /></div>
+        <span slot="text">
+          Agileops agrega, normaliza y enriquece eventos recopilados de
+          diferentes fuentes de datos y utiliza modelos para correlacionar esos
+          datos en eventos accionables.
+        </span>
+      </CardPop>
+      <CardPop id="card-pop-2">
+        <span slot="title">Análisis de causa raíz</span>
+        <div slot="image"><img src="/img/icon-proa-2.png" alt="Icono" /></div>
+        <span slot="text">
+          Método para identificar causas fundamentales de problemas y prevenir
+          su recurrencia, empleando herramientas como diagramas de Ishikawa y
+          preguntas "por qué".
+        </span>
+      </CardPop>
+      <CardPop id="card-pop-3">
+        <span slot="title">Mapa de Impacto</span>
+        <div slot="image"><img src="/img/icon-proa-3.png" alt="Icono" /></div>
+        <span slot="text">
+          Herramienta visual para comprender el efecto de eventos o decisiones
+          en un sistema, priorizando acciones y mitigando riesgos.
+        </span>
+      </CardPop>
+      <CardPop id="card-pop-4">
+        <span slot="title">Auto-remediación</span>
+        <div slot="image"><img src="/img/icon-proa-4.png" alt="Icono" /></div>
+        <span slot="text">
+          Proceso automatizado que identifica y corrige problemas en sistemas o
+          aplicaciones sin intervención humana, mejorando la eficiencia y la
+          disponibilidad del sistema.
+        </span>
+      </CardPop>
+      <CardPop id="card-pop-5">
+        <span slot="title">Cambios autónomos</span>
+        <div slot="image"><img src="/img/icon-proa-5.png" alt="Icono" /></div>
+        <span slot="text">
+          Procesos automatizados que implementan ajustes en sistemas o procesos
+          sin intervención humana, aumentando la eficiencia y reduciendo la
+          carga operativa.
+        </span>
+      </CardPop>
+      <CardPop id="card-pop-6">
+        <span slot="title">Solicitudes autónomas</span>
+        <div slot="image"><img src="/img/icon-proa-6.png" alt="Icono" /></div>
+        <span slot="text">
+          Acciones automatizadas que se ejecutan sin intervención humana
+          directa, agilizando tareas y mejorando la eficiencia del sistema.
+        </span>
+      </CardPop>
+      <CardPop id="card-pop-7">
+        <span slot="title">Autogestión</span>
+        <div slot="image"><img src="/img/icon-proa-7.png" alt="Icono" /></div>
+        <span slot="text">
+          Proceso en el cual los sistemas o entidades se regulan y administran a
+          sí mismos, sin la necesidad de intervención humana directa. Esto
+          aumenta la eficiencia y la autonomía del sistema.
+        </span>
+      </CardPop>
     </div>
   </section>
   <section>
@@ -281,8 +350,7 @@ import AlcanceIcon from "../components/serv-agileops-alcance-icon.astro";
           </AlcanceIcon>
         </div>
         <div
-          class="card-gray content-image mt-5 flex align-center gap-5 font-light"
-          style="background-image:url('img/fondo-card.png'); background-attachment: unset;">
+          class="card-gray content-image mt-5 flex align-center gap-5 font-light card-sust">
           <h3 class="font-4">
             Sustituimos las actividades de tus agentes
             <span class="color-verde"> L1 </span> y

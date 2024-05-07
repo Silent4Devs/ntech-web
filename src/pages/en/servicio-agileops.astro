@@ -6,6 +6,7 @@ import "../../css/servicio-agileops.css";
 import BtnReserva from "../../components/btn-reserva.astro";
 import Indicador from "../../components/serv-agileops-indicadores.astro";
 import AlcanceIcon from "../../components/serv-agileops-alcance-icon.astro";
+import CardPop from "../../components/serv-agileops-cards-pops.astro";
 ---
 
 <Layout>
@@ -164,43 +165,111 @@ import AlcanceIcon from "../../components/serv-agileops-alcance-icon.astro";
           />
         </div>
         <div class="box-proactivas mt-3">
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-1').classList.add('active');">
             <img
               src="/img/icon-proa-1.png"
               alt="Icono Correlación de eventos"
             />
             <h2>Event Correlation</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-2').classList.add('active');">
             <img
               src="/img/icon-proa-2.png"
               alt="Icono Análisis de causa raíz"
             />
             <h2>Root cause analysis</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-3').classList.add('active');">
             <img src="/img/icon-proa-3.png" alt="Icono Mapa de Impacto" />
-            <h2>Root cause analysis</h2>
+            <h2>Impact Map</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-4').classList.add('active');">
             <img src="/img/icon-proa-4.png" alt="Icono Autoremediación" />
             <h2>Self—remediation</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-5').classList.add('active');">
             <img src="/img/icon-proa-5.png" alt="Icono Cambios  autónomos" />
             <h2>Autonomous changes</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-6').classList.add('active');">
             <img src="/img/icon-proa-6.png" alt="Icono Cambios  autónomos" />
             <h2>Autonomous requests</h2>
           </article>
-          <article>
+          <article
+            onclick="document.getElementById('card-pop-7').classList.add('active');">
             <img src="/img/icon-proa-7.png" alt="Icono Cambios  autónomos" />
             <h2>Self-management</h2>
           </article>
         </div>
       </div>
     </div>
+    <CardPop id="card-pop-1">
+      <span slot="title">Event Correlation</span>
+      <div slot="image"><img src="/img/icon-proa-1.png" alt="Icono" /></div>
+      <span slot="text">
+        Agileops aggregates, normalizes, and enriches events collected from
+        different data sources and uses models to correlate that data into
+        actionable events.
+      </span>
+    </CardPop>
+    <CardPop id="card-pop-2">
+      <span slot="title">Root cause analysis</span>
+      <div slot="image"><img src="/img/icon-proa-2.png" alt="Icono" /></div>
+      <span slot="text">
+        Method for identifying root causes of problems and preventing their
+        recurrence, employing tools such as Ishikawa diagrams and "why"
+        questions.
+      </span>
+    </CardPop>
+    <CardPop id="card-pop-3">
+      <span slot="title">Impact Map</span>
+      <div slot="image"><img src="/img/icon-proa-3.png" alt="Icono" /></div>
+      <span slot="text">
+        Visual tool for understanding the effect of events or decisions on a
+        system, prioritizing actions, and mitigating risks.
+      </span>
+    </CardPop>
+    <CardPop id="card-pop-4">
+      <span slot="title">Self—remediation</span>
+      <div slot="image"><img src="/img/icon-proa-4.png" alt="Icono" /></div>
+      <span slot="text">
+        Automated process that identifies and corrects issues in systems or
+        applications without human intervention, improving system efficiency and
+        availability.
+      </span>
+    </CardPop>
+    <CardPop id="card-pop-5">
+      <span slot="title">Autonomous changes</span>
+      <div slot="image"><img src="/img/icon-proa-5.png" alt="Icono" /></div>
+      <span slot="text">
+        Automated processes that implement adjustments in systems or processes
+        without human intervention, increasing efficiency and reducing
+        operational burden.
+      </span>
+    </CardPop>
+    <CardPop id="card-pop-6">
+      <span slot="title">Autonomous requests</span>
+      <div slot="image"><img src="/img/icon-proa-6.png" alt="Icono" /></div>
+      <span slot="text">
+        Automated actions that execute without direct human intervention,
+        streamlining tasks and improving system efficiency.
+      </span>
+    </CardPop>
+    <CardPop id="card-pop-7">
+      <span slot="title">Self-management</span>
+      <div slot="image"><img src="/img/icon-proa-7.png" alt="Icono" /></div>
+      <span slot="text">
+        Process in which systems or entities regulate and manage themselves,
+        without the need for direct human intervention. This increases system
+        efficiency and autonomy.
+      </span>
+    </CardPop>
   </section>
   <section>
     <div class="content content-alcance">
