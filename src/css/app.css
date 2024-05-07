@@ -431,8 +431,9 @@ header:hover .line-back-header {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
 }
 
-.header-list-servs li {
+.header-list-servs li a {
     padding: 15px;
+    display: block;
 }
 
 .header-list-servs li a::before {
