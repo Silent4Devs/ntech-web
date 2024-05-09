@@ -52,7 +52,8 @@ import CardPop from "../../components/serv-agileops-cards-pops.astro";
       <div class="content-limit" style="padding: 100px 0;">
         <h2
           class="font-light title-indicadores font-4"
-          style="letter-spacing: 10px;">
+          style="letter-spacing: 10px;"
+        >
           Some KPIs:
         </h2>
         <div class="box-indicadores mt-3">
@@ -114,7 +115,8 @@ import CardPop from "../../components/serv-agileops-cards-pops.astro";
   <section>
     <div
       class="content content-celerar relative hidden"
-      style="padding-top: 200px; padding-bottom: 200px;">
+      style="padding-top: 200px; padding-bottom: 200px;"
+    >
       <img src="/img/malla.png" alt="Malla" class="absolute top-0 left-0" />
       <img src="/img/malla.png" alt="Malla" class="absolute right-0 bottom-0" />
 
@@ -166,7 +168,8 @@ import CardPop from "../../components/serv-agileops-cards-pops.astro";
         </div>
         <div class="box-proactivas mt-3">
           <article
-            onclick="document.getElementById('card-pop-1').classList.add('active');">
+            onclick="document.getElementById('card-pop-1').classList.add('active');"
+          >
             <img
               src="/img/icon-proa-1.png"
               alt="Icono Correlación de eventos"
@@ -174,7 +177,8 @@ import CardPop from "../../components/serv-agileops-cards-pops.astro";
             <h2>Event Correlation</h2>
           </article>
           <article
-            onclick="document.getElementById('card-pop-2').classList.add('active');">
+            onclick="document.getElementById('card-pop-2').classList.add('active');"
+          >
             <img
               src="/img/icon-proa-2.png"
               alt="Icono Análisis de causa raíz"
@@ -182,27 +186,32 @@ import CardPop from "../../components/serv-agileops-cards-pops.astro";
             <h2>Root cause analysis</h2>
           </article>
           <article
-            onclick="document.getElementById('card-pop-3').classList.add('active');">
+            onclick="document.getElementById('card-pop-3').classList.add('active');"
+          >
             <img src="/img/icon-proa-3.png" alt="Icono Mapa de Impacto" />
             <h2>Impact Map</h2>
           </article>
           <article
-            onclick="document.getElementById('card-pop-4').classList.add('active');">
+            onclick="document.getElementById('card-pop-4').classList.add('active');"
+          >
             <img src="/img/icon-proa-4.png" alt="Icono Autoremediación" />
             <h2>Self—remediation</h2>
           </article>
           <article
-            onclick="document.getElementById('card-pop-5').classList.add('active');">
+            onclick="document.getElementById('card-pop-5').classList.add('active');"
+          >
             <img src="/img/icon-proa-5.png" alt="Icono Cambios  autónomos" />
             <h2>Autonomous changes</h2>
           </article>
           <article
-            onclick="document.getElementById('card-pop-6').classList.add('active');">
+            onclick="document.getElementById('card-pop-6').classList.add('active');"
+          >
             <img src="/img/icon-proa-6.png" alt="Icono Cambios  autónomos" />
             <h2>Autonomous requests</h2>
           </article>
           <article
-            onclick="document.getElementById('card-pop-7').classList.add('active');">
+            onclick="document.getElementById('card-pop-7').classList.add('active');"
+          >
             <img src="/img/icon-proa-7.png" alt="Icono Cambios  autónomos" />
             <h2>Self-management</h2>
           </article>
@@ -213,35 +222,36 @@ import CardPop from "../../components/serv-agileops-cards-pops.astro";
       <span slot="title">Event Correlation</span>
       <div slot="image"><img src="/img/icon-proa-1.png" alt="Icono" /></div>
       <span slot="text">
-        Agileops aggregates, normalizes, and enriches events collected from
-        different data sources and uses models to correlate that data into
-        actionable events.
+        AgileOps aggregates, normalizes, enriches, and processes any type of
+        data from multiple domains using machine learning models to correlate
+        events and transform them into actionable items.
       </span>
     </CardPop>
     <CardPop id="card-pop-2">
       <span slot="title">Root cause analysis</span>
       <div slot="image"><img src="/img/icon-proa-2.png" alt="Icono" /></div>
       <span slot="text">
-        Method for identifying root causes of problems and preventing their
-        recurrence, employing tools such as Ishikawa diagrams and "why"
-        questions.
+        AgileOps can identify the potential root cause of an incident through
+        service models that locate the affected component in any communication
+        layer, from the lowest level, such as a server, to the highest, such as
+        communication with Internet Service Providers (ISPs).
       </span>
     </CardPop>
     <CardPop id="card-pop-3">
       <span slot="title">Impact Map</span>
       <div slot="image"><img src="/img/icon-proa-3.png" alt="Icono" /></div>
       <span slot="text">
-        Visual tool for understanding the effect of events or decisions on a
-        system, prioritizing actions, and mitigating risks.
+        AgileOps utilizes impact maps to automatically identify a component
+        affected by an incident.
       </span>
     </CardPop>
     <CardPop id="card-pop-4">
       <span slot="title">Self—remediation</span>
       <div slot="image"><img src="/img/icon-proa-4.png" alt="Icono" /></div>
       <span slot="text">
-        Automated process that identifies and corrects issues in systems or
-        applications without human intervention, improving system efficiency and
-        availability.
+        Automated process that restores the health of a component without human
+        intervention, improving efficiency, availability, and ensuring
+        compliance with service levels.
       </span>
     </CardPop>
     <CardPop id="card-pop-5">
@@ -258,16 +268,17 @@ import CardPop from "../../components/serv-agileops-cards-pops.astro";
       <div slot="image"><img src="/img/icon-proa-6.png" alt="Icono" /></div>
       <span slot="text">
         Automated actions that execute without direct human intervention,
-        streamlining tasks and improving system efficiency.
+        streamlining tasks and improving the efficiency of the system.
       </span>
     </CardPop>
     <CardPop id="card-pop-7">
       <span slot="title">Self-management</span>
       <div slot="image"><img src="/img/icon-proa-7.png" alt="Icono" /></div>
       <span slot="text">
-        Process in which systems or entities regulate and manage themselves,
-        without the need for direct human intervention. This increases system
-        efficiency and autonomy.
+        A unique component in the market, capable of autonomously managing the
+        lifecycle of an incident, can decide whether to escalate the case to the
+        manufacturer or to level L3, attaching all necessary history and
+        evidence for prompt resolution.
       </span>
     </CardPop>
   </section>
@@ -357,7 +368,8 @@ import CardPop from "../../components/serv-agileops-cards-pops.astro";
         </div>
         <div
           class="card-gray content-image mt-5 flex align-center gap-5 font-light"
-          style="background-image:url('img/fondo-card.png'); background-attachment: unset;">
+          style="background-image:url('img/fondo-card.png'); background-attachment: unset;"
+        >
           <h3 class="font-4">
             We replace the tasks handled by your
             <span class="color-verde"> L1 </span> and
