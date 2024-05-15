@@ -31,3 +31,9 @@
     left: 100px;
     z-index: -1;
 }
+
+@media(max-width: 1100px){
+    .content-racing .flex span{
+        text-align: center;
+    }
+}
