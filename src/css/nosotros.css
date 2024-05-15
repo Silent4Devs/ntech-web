@@ -35,3 +35,10 @@
     bottom: 0;
     transform: translateX(50px);
 }
+
+@media(max-width: 1100px){
+    main{
+        width: 100%;
+        overflow: hidden;
+    }
+}

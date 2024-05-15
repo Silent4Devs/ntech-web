@@ -1,0 +1,109 @@
+---
+const { currentLocale } = Astro;
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const tl = useTranslations(lang);
+
+import { getRelativeLocaleUrl } from "astro:i18n";
+---
+
+<header>
+  <a href={getRelativeLocaleUrl(currentLocale ?? "", "/")} class="logo-ntech">
+    <img src="/img/logo.png" alt="Logo Ntechnology" />
+  </a>
+  <button
+    class="btn-menu-header"
+    onclick="document.querySelector('.btn-menu-header').classList.toggle('active');
+    document.querySelector('header nav').classList.toggle('active');">
+    <div class="line-menu">
+      <hr />
+    </div>
+  </button>
+  <nav>
+    <button class="nav-item btn-servs-options">
+      <span>{tl("nav.servicios")}</span>
+      <ul class="header-list-servs">
+        <style>
+          li a[href=""] {
+            opacity: 0.3;
+          }
+        </style>
+        <li>
+          <a
+            href={getRelativeLocaleUrl(
+              currentLocale ?? "",
+              "servicio-agileops"
+            )}>{tl("serv.itopsAuto")}</a
+          >
+        </li>
+        <li>
+          <a href={getRelativeLocaleUrl(currentLocale ?? "", "servicio-itops")}
+            >{tl("serv.itops")}</a
+          >
+        </li>
+        <li>
+          <a
+            href={getRelativeLocaleUrl(
+              currentLocale ?? "",
+              "servicio-multicloud"
+            )}>{tl("serv.nubePublica")}</a
+          >
+        </li>
+        <li>
+          <a
+            href={getRelativeLocaleUrl(
+              currentLocale ?? "",
+              "servicio-nube-privada"
+            )}>{tl("serv.nubePrivada")}</a
+          >
+        </li>
+        <li>
+          <a href="">{tl("serv.dataMl")}</a>
+        </li>
+        <li><a href="">{tl("serv.monitoreo_industria")}</a></li>
+        <li><a href="">{tl("serv.industria")}</a></li>
+        <li><a href="">Hardware</a></li>
+      </ul>
+    </button>
+
+    <button class="nav-item btn-servs-options">
+      <span>{tl("nav.nosotros")}</span>
+      <ul class="header-list-servs">
+        <li>
+          <a href={getRelativeLocaleUrl(currentLocale ?? "", "nosotros")}
+            >{tl("nav.sobre_nosotros")}</a
+          >
+        </li>
+        <li>
+          <a href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
+            >{tl("nav.fundador")}</a
+          >
+        </li>
+      </ul>
+    </button>
+
+    <a
+      href={getRelativeLocaleUrl(currentLocale ?? "", "porque-ntechnology")}
+      class="nav-item"><span>{tl("nav.porque")}</span></a
+    >
+
+    <a href="https://n.technology/news/" class="nav-item" target="_blank"
+      ><span>Blog</span></a
+    >
+    <a href="#footer" class="nav-item"><span>{tl("nav.contacto")}</span></a>
+
+    <div class="nav-item last-item-nav item-lan-nav">
+      <span>
+        <a href={getRelativeLocaleUrl("es" ?? "", "/")} class="switch-lang">
+          ES. <img src="/img/flag-mx.png" alt="Bandera méxico" />
+        </a>
+        <span style="margin: 0px 20px;"> / </span>
+        <a href={getRelativeLocaleUrl("en" ?? "", "/")} class="switch-lang">
+          EN. <img src="/img/flag-us.png" alt="Bandera US" />
+        </a>
+      </span>
+    </div>
+    <hr class="line-back-header" />
+  </nav>
+</header>

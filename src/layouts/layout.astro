@@ -8,6 +8,8 @@ const lang = getLangFromUrl(Astro.url);
 const tl = useTranslations(lang);
 
 import { getRelativeLocaleUrl } from "astro:i18n";
+
+import HeaderApp from "../components/layout-header.astro";
 ---
 
 <html lang="es-MX">
@@ -19,103 +21,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
     <title>ntechnology</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a
-          href={getRelativeLocaleUrl(currentLocale ?? "", "/")}
-          class="logo-ntech">
-          <img src="/img/logo.png" alt="Logo Ntechnology" />
-        </a>
-        <button class="nav-item btn-servs-options">
-          <span>{tl("nav.servicios")}</span>
-          <ul class="header-list-servs">
-            <style>
-              li a[href=""] {
-                opacity: 0.3;
-              }
-            </style>
-            <li>
-              <a
-                href={getRelativeLocaleUrl(
-                  currentLocale ?? "",
-                  "servicio-agileops"
-                )}>{tl("serv.itopsAuto")}</a
-              >
-            </li>
-            <li>
-              <a
-                href={getRelativeLocaleUrl(
-                  currentLocale ?? "",
-                  "servicio-itops"
-                )}>{tl("serv.itops")}</a
-              >
-            </li>
-            <li>
-              <a
-                href={getRelativeLocaleUrl(
-                  currentLocale ?? "",
-                  "servicio-multicloud"
-                )}>{tl("serv.nubePublica")}</a
-              >
-            </li>
-            <li>
-              <a
-                href={getRelativeLocaleUrl(
-                  currentLocale ?? "",
-                  "servicio-nube-privada"
-                )}>{tl("serv.nubePrivada")}</a
-              >
-            </li>
-            <li>
-              <a href="">{tl("serv.dataMl")}</a>
-            </li>
-            <li><a href="">{tl("serv.monitoreo_industria")}</a></li>
-            <li><a href="">{tl("serv.industria")}</a></li>
-            <li><a href="">Hardware</a></li>
-          </ul>
-        </button>
-
-        <button class="nav-item btn-servs-options">
-          <span>{tl("nav.nosotros")}</span>
-          <ul class="header-list-servs">
-            <li>
-              <a href={getRelativeLocaleUrl(currentLocale ?? "", "nosotros")}
-                >{tl("nav.sobre_nosotros")}</a
-              >
-            </li>
-            <li>
-              <a href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
-                >{tl("nav.fundador")}</a
-              >
-            </li>
-          </ul>
-        </button>
-
-        <a
-          href={getRelativeLocaleUrl(currentLocale ?? "", "porque-ntechnology")}
-          class="nav-item"><span>{tl("nav.porque")}</span></a
-        >
-
-        <a href="https://n.technology/news/" class="nav-item" target="_blank"
-          ><span>Blog</span></a
-        >
-        <a href="#footer" class="nav-item"><span>{tl("nav.contacto")}</span></a>
-
-        <a
-          href={getRelativeLocaleUrl("es" ?? "", "/")}
-          class="nav-item switch-lang">
-          <span>ES. <img src="/img/flag-mx.png" alt="Bandera méxico" /> </span>
-        </a>
-        <a
-          href={getRelativeLocaleUrl("en" ?? "", "/")}
-          class="nav-item switch-lang">
-          <span>
-            EN. <img src="/img/flag-us.png" alt="Bandera US" />
-          </span>
-        </a>
-      </nav>
-      <hr class="line-back-header" />
-    </header>
+    <HeaderApp />
     <script>
       let navItems = document.querySelectorAll(".nav-item");
       let line = document.querySelector(".line-back-header") as HTMLElement;
@@ -152,21 +58,21 @@ import { getRelativeLocaleUrl } from "astro:i18n";
           </a>
         </div>
         <div>
-          <div class="flex align-center">
+          <div class="flex align-center item-flex-footer">
             <div class="icon-footer">
               <img src="/img/icon-mail.png" alt="" />
             </div>
             contacto@n.technology
           </div>
 
-          <div class="flex align-center">
+          <div class="flex align-center item-flex-footer">
             <div class="icon-footer">
               <img src="/img/icon-phone.png" alt="" />
             </div>
             55 . 1169 . 1227
           </div>
 
-          <div class="flex align-center">
+          <div class="flex align-center item-flex-footer">
             <div class="icon-footer"></div>
             <a href="aviso-privacidad">{tl("footer.politica")}</a>
           </div>
