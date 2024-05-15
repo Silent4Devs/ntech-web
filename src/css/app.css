@@ -461,7 +461,7 @@ nav:hover .line-back-header {
 
 .switch-lang img {
     width: 25px;
-    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(35% at 50% 50%);
 }
 
 .btn-menu-header {
@@ -654,13 +654,24 @@ footer {
         display: none;
     }
 
+    main {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .content-inicio {
+        height: auto;
+        padding-top: 150px;
+    }
+
     .flex {
         width: 100% !important;
         flex-wrap: wrap;
     }
 
     .flex>*:not(img) {
-        width: 100%;
+        width: 100% !important;
     }
 
     .footer-box-info {
@@ -680,7 +691,7 @@ footer {
         flex-wrap: nowrap;
     }
 
-    .icon-footer {
+    .flex .icon-footer {
         width:
             50px !important;
     }
@@ -700,24 +711,24 @@ footer {
 
 @media(max-width: 800px) {
     body {
-        zoom: 80%;
+        zoom: 85%;
     }
 }
 
 @media(max-width: 650px) {
     body {
-        zoom: 70%;
+        zoom: 80%;
     }
 }
 
 @media(max-width: 550px) {
     body {
-        zoom: 60%;
+        zoom: 75%;
     }
 }
 
 @media(max-width: 450px) {
     body {
-        zoom: 50%;
+        zoom: 70%;
     }
 }

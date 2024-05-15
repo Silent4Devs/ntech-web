@@ -1,26 +1,30 @@
-.content-inicio{
+.content-inicio {
     background-image: url('../../public/img/fondo-nosotros.png');
 }
-.mano-robot{
+
+.mano-robot {
     height: 500px;
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(-20%, -50%);
 }
-.mano-humana{
+
+.mano-humana {
     height: 400px;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(30%, -40%);
 }
-.content.content-evolucion{
+
+.content.content-evolucion {
     background-image: url('../../public/img/fondo-evolucion.png');
     padding-top: 150px;
     padding-bottom: 150px;
 }
-.card-open{
+
+.card-open {
     background-image: url('../../public/img/fondo-open.png');
     background-color: #00000000;
     max-width: 1500px;
@@ -28,7 +32,8 @@
     margin: auto;
     padding: 100px;
 }
-.img-integrantes{
+
+.img-integrantes {
     width: 600px;
     position: absolute;
     right: 0;
@@ -36,9 +41,34 @@
     transform: translateX(50px);
 }
 
-@media(max-width: 1100px){
-    main{
+@media(max-width: 1100px) {
+    main {
         width: 100%;
         overflow: hidden;
+    }
+
+    .content-orgs .card-gray h2 {
+        position: relative;
+        z-index: 1;
+    }
+
+    .mano-robot {
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-20%, 0%);
+        z-index: 0;
+        filter: brightness(0.7);
+    }
+
+    .mano-humana {
+        height: 300px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(30%, 0%);
+        z-index: 0;
+        filter: brightness(0.7);
     }
 }
