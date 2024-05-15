@@ -65,7 +65,7 @@
     transition: 0.3s;
 }
 
-.box-proactivas article:hover img{
+.box-proactivas article:hover img {
     transform: scale(1.2);
 }
 
@@ -107,22 +107,22 @@
     background-image: url('/img/fondo-eventos.png');
 }
 
-.card-sust{
+.card-sust {
     /* background-image:url('/img/fo-card.png'); */
     background-attachment: unset;
 }
 
-@media(max-width: 1100px){
-    .content-inicio img{
+@media(max-width: 1100px) {
+    .content-inicio img {
         width: 90%;
         max-width: 850px;
     }
 
-    .content-indicadores article{
-        width: auto;
+    .content-indicadores .flex>article {
+        width: auto !important;
     }
 
-    .content-proactivas .content-limit > div.flex img{
+    .content-proactivas .content-limit>div.flex img {
         margin-top: 0px !important;
     }
 }
