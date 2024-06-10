@@ -1,8 +1,20 @@
-.content-inicio{
+.content-inicio {
     background-image: url('../../public/img/fondo-multi.png');
 }
-.box-brindas article{
+
+.box-brindas article {
     min-width: 245px;
     padding: 20px;
     background: linear-gradient(180deg, rgb(14, 14, 14) 70%, rgb(38, 38, 38) 100%);
+}
+
+@media (max-width:1100px) {
+    .content-ti .card-gray p {
+        max-width: 100% !important;
+    }
+
+    .content-ti .flex.align-center.justify-between {
+        gap: 50px;
+        justify-content: center;
+    }
 }

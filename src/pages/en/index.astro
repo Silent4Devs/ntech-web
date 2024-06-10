@@ -3,6 +3,10 @@ import Layout from "../../layouts/layout.astro";
 import "../../css/home.css";
 
 import BtnReserva from "../../components/btn-reserva.astro";
+
+import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const tl = useTranslations(lang);
 ---
 
 <Layout>
@@ -12,8 +16,7 @@ import BtnReserva from "../../components/btn-reserva.astro";
         DIGITAL<span>.</span> EVOLUTION<span>.</span>
       </h1>
       <p class="p-inicio">
-        We accelerate the evolution of your <br />
-        organization through technology.
+        We accelerate the evolution of your organization through technology.
       </p>
       <BtnReserva />
     </div>
@@ -21,7 +24,7 @@ import BtnReserva from "../../components/btn-reserva.astro";
   <section>
     <div class="content-cohete">
       <img src="/img/cohete.png" class="cohete" alt="cohete" />
-      <div class="card-gray box-cohete">
+      <div class="card-gray-cohete content-limit">
         <div class="z-5">
           <h2 style="font-size: 30px;">
             Does your technological ecosystem drive continuity, evolution and
@@ -35,9 +38,7 @@ import BtnReserva from "../../components/btn-reserva.astro";
           <ul class="list-cohete font-light">
             <li>
               <img src="/img/icon-right.png" alt="" />
-              <span>
-                Are your technological systems too complex to manage?
-              </span>
+              <span>Are your technological systems too complex to manage?</span>
             </li>
             <li>
               <img src="/img/icon-right.png" alt="" />
@@ -64,139 +65,164 @@ import BtnReserva from "../../components/btn-reserva.astro";
         </div>
       </div>
       <div class="card-gray-gran" style="margin-top: 50px;">
-        <h2 style="font-size: 35px;">
-          We understand that you deserve an evolved approach to your IT
-          services.
-        </h2>
-        <p style="color: var(--verde); font-size: 20px;">
-          Find out how N Technology can help you
-        </p>
+        <div class="content-limit">
+          <h2 style="font-size: 35px;">
+            We understand that you deserve an evolved approach to your IT
+            services<span>.</span>
+          </h2>
+          <p style="color: var(--verde); font-size: 20px;">
+            Descubre como N Technology te puede ayudar
+          </p>
+        </div>
       </div>
     </div>
   </section>
   <section id="servicios">
-    <div class="content-servicios">
-      <div
-        style="display: flex; gap: 50px; justify-content: space-between; align-items: center;">
-        <div style="width: 500px;">
-          <h2 style="font-size: 40px;">
-            Simplify IT initiatives and operations with our services and
-            platforms.
+    <div class="content content-servicios">
+      <div class="content-limit mt-5">
+        <div class="flex justify-between align-center">
+          <div style="width: 500px;">
+            <h2 class="font-5">
+              Simplify IT initiatives and operations with our services and
+              platforms.
+            </h2>
+            <hr style="width: 100px; margin-left: -20px;" />
+            <p>
+              We integrate proprietary technologies, strategic partnerships, our
+              skilled team of engineers, and our specialized processes.
+            </p>
+            <p>
+              This leads to decreased IT operational expenses, enhanced
+              performance and availability of applications and services, and
+              increased agility to tackle business challenges effectively.
+            </p>
+          </div>
+          <div class="items-serv">
+            <ul>
+              <li>
+                <a href="#servicios">
+                  <img src="/img/home-icon-serv-1.png" alt="Icono velocity" />
+                  Autonomous ITOps
+                </a>
+              </li>
+              <li>
+                <a href="/servicio-itops/">
+                  <img src="/img/home-icon-serv-2.png" alt="Icono velocity" />
+                  ITOPS
+                </a>
+              </li>
+              <li>
+                <a href="#servicios">
+                  <img src="/img/home-icon-serv-3.png" alt="Icono velocity" />
+                  Public Cloud
+                </a>
+              </li>
+              <li>
+                <a href="/servicio-nube-privada/">
+                  <img src="/img/home-icon-serv-4.png" alt="Icono velocity" />
+                  Private Cloud
+                </a>
+              </li>
+              <li>
+                <a href="/servicio-multicloud/">
+                  <img src="/img/home-icon-serv-5.png" alt="Icono velocity" />
+                  Data and ML
+                </a>
+              </li>
+              <li>
+                <a href="#servicios">
+                  <img src="/img/home-icon-serv-6.png" alt="Icono velocity" />
+                  Industrial Monitoring
+                </a>
+              </li>
+              <li>
+                <a href="#servicios">
+                  <img src="/img/home-icon-serv-8.png" alt="Icono velocity" />
+                  Hardware
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-alianzas">
+      <div class="content-limit mt-4">
+        <div class="box-alianzas">
+          <div class="flex justify-between align-center">
+            <img src="/img/partners/Ntech_Recorte-7-8.png" alt="Logo Alibaba" />
+            <img src="/img/partners/Ntech_Recorte-7-3.png" alt="Logo Oracle" />
+            <img src="/img/partners/Ntech_Recorte-7-7.png" alt="Logo Kaytus" />
+            <img
+              src="/img/partners/Ntech_Recorte-7-6.png"
+              alt="Logo Atlassian"
+            />
+          </div>
+          <div class="flex justify-center align-center mt-3 gap-6">
+            <img src="/img/partners/Ntech_Recorte-7-9.png" alt="Logo Manage" />
+            <img
+              src="/img/partners/Ntech_Recorte-7-2.png"
+              alt="Logo RocketBot"
+            />
+            <img
+              src="/img/partners/Ntech_Recorte-7-1.png"
+              alt="Logo Microsoft"
+            />
+          </div>
+          <div
+            class="flex justify-center align-center mt-3 gap-6 last-item-alianzas"
+            style="margin-left: -200px;"
+          >
+            <img src="/img/partners/Ntech_Recorte-7-5.png" alt="Logo bmc" />
+            <img src="/img/partners/Ntech_Recorte-7-4.png" alt="Logo Zabbix" />
+            <img
+              src="/img/partners/Ntech_Recorte-7-10.png"
+              alt="Logo Red Hat"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content content-evolucion">
+      <div class="content-limit mt-5">
+        <div
+          class="card-gray"
+          style="text-align: center; display: block; padding: 60px;"
+        >
+          <h2 style="font-size:50px; width: 100%;" class="title-evo">
+            Evolution<span style="color: var(--verde);">.</span>
           </h2>
-          <hr style="width: 100px; margin-left: -20px;" />
-          <p>
-            We integrate proprietary technologies, strategic partnerships, our
-            skilled team of engineers, and our specialized processes.
+
+          <p style="font-size:20px; font-family: Sofia Pro light;">
+            Enable adaptability, enhance efficiency, and boost the profitability
+            of organizations through technological solutions<span
+              class="color-verde">.</span
+            >
           </p>
-          <p>
-            This leads to decreased IT operational expenses, enhanced
-            performance and availability of applications and services, and
-            increased agility to tackle business challenges effectively.
-          </p>
-        </div>
 
-        <div class="items-serv">
-          <ul>
-            <li>
-              <a href="#servicios">
-                <img src="/img/home-icon-serv-1.png" alt="Icono velocity" />
-                Autonomous ITOps
-              </a>
-            </li>
-            <li>
-              <a href="/servicio-itops/">
-                <img src="/img/home-icon-serv-2.png" alt="Icono velocity" />
-                ITOps
-              </a>
-            </li>
-            <li>
-              <a href="#servicios">
-                <img src="/img/home-icon-serv-3.png" alt="Icono velocity" />
-                Public Cloud
-              </a>
-            </li>
-            <li>
-              <a href="/servicio-nube-privada/">
-                <img src="/img/home-icon-serv-4.png" alt="Icono velocity" />
-                Private Cloud
-              </a>
-            </li>
-            <li>
-              <a href="/servicio-multicloud/">
-                <img src="/img/home-icon-serv-5.png" alt="Icono velocity" />
-                Data and ML
-              </a>
-            </li>
-            <li>
-              <a href="#servicios">
-                <img src="/img/home-icon-serv-7.png" alt="Icono velocity" />
-                Industrial Monitoring
-              </a>
-            </li>
-            <li>
-              <a href="#servicios">
-                <img src="/img/home-icon-serv-8.png" alt="Icono velocity" />
-                Hardware
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="content-alianzas">
-      <div class="box-alianzas">
-        <div
-          style="display: flex; align-items: center; justify-content: space-between;">
-          <img src="/img/partners/Ntech_Recorte-7-8.png" alt="Logo Alibaba" />
-          <img src="/img/partners/Ntech_Recorte-7-3.png" alt="Logo Oracle" />
-          <img src="/img/partners/Ntech_Recorte-7-7.png" alt="Logo Kaytus" />
-          <img src="/img/partners/Ntech_Recorte-7-6.png" alt="Logo Atlassian" />
-        </div>
-        <div
-          style="display: flex; align-items: center; justify-content:center; margin-top: 60px; gap: 60px;">
-          <img src="/img/partners/Ntech_Recorte-7-9.png" alt="Logo Manage" />
-          <img src="/img/partners/Ntech_Recorte-7-2.png" alt="Logo RocketBot" />
-          <img src="/img/partners/Ntech_Recorte-7-1.png" alt="Logo Microsoft" />
-        </div>
-        <div
-          style="display: flex; align-items: center; justify-content:center; margin-top: 60px; gap:50px; margin-left: -200px;">
-          <img src="/img/partners/Ntech_Recorte-7-5.png" alt="Logo bmc" />
-          <img src="/img/partners/Ntech_Recorte-7-4.png" alt="Logo Zabbix" />
-          <img src="/img/partners/Ntech_Recorte-7-10.png" alt="Logo Red Hat" />
+          <img
+            src="/img/hands-greeting.png"
+            alt="Saludo"
+            class="hands-greeting"
+            srcset="width: 80%; max-width: 650px;"
+          />
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="content-evolucion">
-      <div
-        class="card-gray"
-        style="text-align: center; display: block; padding: 60px;">
-        <h2 style="font-size:50px; width: 100%;" class="title-evo">
-          Evolution<span style="color: var(--verde);">.</span>
-        </h2>
-
-        <p style="font-size:20px; font-family: Sofia Pro light;">
-          Enable adaptability, enhance efficiency, and boost the profitability
-          of organizations through technological solutions.
-        </p>
-
-        <img
-          src="/img/hands-greeting.png"
-          alt="Saludo"
-          class="hands-greeting"
-        />
+    <div class="content content-ubicaciones">
+      <div class="content-limit mt-5 text-center">
+        <img src="/img/ubicaciones.png" alt="" style="width: 100%;" />
       </div>
     </div>
   </section>
-  <section>
-    <div class="content-ubicaciones">
-      <img src="/img/ubicaciones.png" alt="" style="width: 100%;" />
-    </div>
-  </section>
+
   <section>
     <div class="content content-ayudamos">
       <div class="content-limit mt-6">
