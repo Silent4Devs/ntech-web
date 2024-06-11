@@ -46,7 +46,7 @@ export const ui = {
     'serv.nubePublica' : 'Multinube',
     'serv.nubePrivada' : 'Nube Privada',
     'serv.dataMl' : 'Data y ML',
-    'serv.monitoreo_industria' : 'Monitoreo de Industria',
+    'serv.monitoreo_industria' : 'Monitoreo Industrial',
     'serv.industria' : 'Soluciones de Industria',
 
     'btn.inicio' : 'Reserva una Demo',
