@@ -20,7 +20,7 @@ import HeaderApp from "../components/layout-header.astro";
     <meta name="generator" content={Astro.generator} />
     <title>ntechnology</title>
   </head>
-  <body>
+  <body style="zoom: 125%;">
     <HeaderApp />
     <script>
       let navItems = document.querySelectorAll(".nav-item");
@@ -38,7 +38,7 @@ import HeaderApp from "../components/layout-header.astro";
     </script>
 
     <style>
-      .oracle-circle{
+      .oracle-circle {
         width: 60px;
         height: 60px;
         overflow: hidden;
@@ -50,20 +50,19 @@ import HeaderApp from "../components/layout-header.astro";
         transition: 0.3s;
         cursor: pointer;
       }
-      .oracle-circle:hover{
+      .oracle-circle:hover {
         width: 200px;
         height: 100px;
         border-radius: 0px;
         border: #00000000 1px solid;
       }
-      .oracle-circle img{
+      .oracle-circle img {
         width: 200px;
       }
     </style>
-    <a href="oracle-servicio-nube">
-
+    <a href="/oracle-servicio-nube">
       <div class="oracle-circle">
-        <img src="/img/oracle-logo.png" alt="Oracle logo">
+        <img src="/img/oracle-logo.png" alt="Oracle logo" />
       </div>
     </a>
 
