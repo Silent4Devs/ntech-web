@@ -1,0 +1,71 @@
+---
+const { currentLocale } = Astro;
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils.ts";
+const lang = getLangFromUrl(Astro.url);
+const tl = useTranslations(lang);
+
+import { getRelativeLocaleUrl } from "astro:i18n";
+---
+
+<header>
+  <a href={getRelativeLocaleUrl(currentLocale ?? "", "/")} class="logo-ntech">
+    <img src="/img/logo.png" alt="Logo Ntechnology" />
+  </a>
+  <button
+    class="btn-menu-header"
+    onclick="document.querySelector('.btn-menu-header').classList.toggle('active');
+    document.querySelector('header nav').classList.toggle('active');"
+  >
+    <div class="line-menu">
+      <hr />
+    </div>
+  </button>
+  <nav>
+
+    <button class="nav-item btn-servs-options">
+      <span>Casos de Éxito</span>
+      <ul class="header-list-servs">
+        <li>
+          <a href="oracle-caso-exito-1"
+            >Implementing GRP</a
+          >
+        </li>
+        <li>
+          <a href="oracle-caso-exito-2"
+            >Database Oracle Cloud</a
+          >
+        </li>
+      </ul>
+    </button>
+
+    <a
+      href="oracle-servicio-nube"
+      class="nav-item"><span>Oracle</span></a
+    >
+
+    <!-- <a href="https://n.technology/news/" class="nav-item" target="_blank"
+      ><span>Blog</span></a
+    > -->
+    <a href="#footer" class="nav-item"><span>{tl("nav.contacto")}</span></a>
+
+    <!-- <div class="nav-item last-item-nav item-lan-nav">
+      <span>
+        <a href={getRelativeLocaleUrl("es" ?? "", "/")} class="switch-lang">
+          ES. <img src="/img/flag-mx.png" alt="Bandera méxico" />
+        </a>
+        <span style="margin: 0px 20px;"> / </span>
+        <a href={getRelativeLocaleUrl("en" ?? "", "/")} class="switch-lang">
+          EN. <img src="/img/flag-us.png" alt="Bandera US" />
+        </a>
+      </span>
+    </div> -->
+
+    <a href="oracle-servicio-nube" class="logo-ntech">
+      <img src="/img/oracle-logo.png" alt="Oracle logo" style="height: 70px;">
+    </a>
+
+    <div></div>
+    <hr class="line-back-header" />
+  </nav>
+</header>
