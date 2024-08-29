@@ -9,7 +9,7 @@ const tl = useTranslations(lang);
 
 import { getRelativeLocaleUrl } from "astro:i18n";
 
-import HeaderApp from "../components/layout-header.astro";
+import HeaderApp from "../components/oracle-layout-header.astro";
 ---
 
 <html lang="es-MX">
@@ -36,37 +36,6 @@ import HeaderApp from "../components/layout-header.astro";
         });
       });
     </script>
-
-    <style>
-      .oracle-circle{
-        width: 60px;
-        height: 60px;
-        overflow: hidden;
-        position: fixed;
-        top: 100px;
-        right: 0px;
-        border: 1px solid #444444;
-        border-radius: 1000px;
-        transition: 0.3s;
-        cursor: pointer;
-      }
-      .oracle-circle:hover{
-        width: 200px;
-        height: 100px;
-        border-radius: 0px;
-        border: #00000000 1px solid;
-      }
-      .oracle-circle img{
-        width: 200px;
-      }
-    </style>
-    <a href="oracle-servicio-nube">
-
-      <div class="oracle-circle">
-        <img src="/img/oracle-logo.png" alt="Oracle logo">
-      </div>
-    </a>
-
     <main>
       <slot />
     </main>
