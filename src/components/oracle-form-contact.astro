@@ -1,0 +1,48 @@
+<style>
+  .form-oracle input:not(input[type="checkbox"]),
+  .form-oracle textarea {
+    width: 100%;
+    background-color: rgba(119, 119, 119, 0.1);
+    border: 1px solid #333333;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    font-family: "Sofia Pro";
+  }
+
+  .form-oracle .flex {
+    gap: 15px;
+  }
+
+  .btn-form {
+    padding: 8px 30px;
+    border-radius: 6px;
+    background-color: #c9f70d;
+    color: #000;
+    font-family: "Sofia Pro bold";
+  }
+</style>
+<div class="form-oracle">
+  <input type="text" placeholder="Nombres" />
+  <input type="text" placeholder="Apellidos" />
+  <div class="flex">
+    <input type="text" placeholder="e-mail" />
+    <input type="text" placeholder="Puesto de Trabajo" />
+  </div>
+  <input type="text" placeholder="Nombre de la Compañía" />
+  <textarea placeholder="¿Como podemos ayudarte?" style="height: 80px;"
+  ></textarea>
+  <div class="flex justify-between align-center" style="">
+    <div>
+      <input type="checkbox" name="" id="" />
+      <label for="">
+        <small class="font-light">
+          Estoy de acuerdo con los términos y condiciones
+        </small>
+      </label>
+    </div>
+    <button class="btn-form">Enviar</button>
+  </div>
+</div>

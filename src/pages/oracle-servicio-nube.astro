@@ -3,6 +3,8 @@ import Layout from "../layouts/oracle-layout.astro";
 import "../css/oracle-servicio-nube.css";
 
 import BtnReserva from "../components/btn-reserva.astro";
+
+import FormContact from "../components/oracle-form-contact.astro";
 ---
 
 <Layout>
@@ -401,18 +403,7 @@ import BtnReserva from "../components/btn-reserva.astro";
             </p>
           </div>
           <div style="width: 60%;">
-            <div class="form-oracle">
-              <input type="text" placeholder="" />
-              <div class="flex">
-                <input type="text" placeholder="" />
-                <input type="text" placeholder="" />
-              </div>
-              <input type="text" placeholder="" />
-              <input type="text" placeholder="" style="height: 60px;" />
-              <div>
-                <button class="btn">Enviar</button>
-              </div>
-            </div>
+            <FormContact />
           </div>
         </div>
       </div>
