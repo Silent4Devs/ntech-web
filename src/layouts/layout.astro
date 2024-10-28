@@ -20,7 +20,7 @@ import HeaderApp from "../components/layout-header.astro";
     <meta name="generator" content={Astro.generator} />
     <title>ntechnology</title>
   </head>
-  <body style="zoom: 125%;">
+  <body>
     <HeaderApp />
     <script>
       let navItems = document.querySelectorAll(".nav-item");
@@ -49,6 +49,7 @@ import HeaderApp from "../components/layout-header.astro";
         border-radius: 1000px;
         transition: 0.3s;
         cursor: pointer;
+        display: none;
       }
       .oracle-circle:hover {
         width: 200px;
