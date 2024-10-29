@@ -60,9 +60,6 @@ import { getRelativeLocaleUrl } from "astro:i18n";
         </li>
         <li><a href="/servicio-hardware/">Hardware</a></li>
         <li>
-          <a href="/gob/">Gobierno</a>
-        </li>
-        <li>
           <a href="">{tl("serv.dataMl")}</a>
         </li>
         <li><a href="">{tl("serv.monitoreo_industria")}</a></li>
@@ -82,6 +79,18 @@ import { getRelativeLocaleUrl } from "astro:i18n";
           <a href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
             >{tl("nav.fundador")}</a
           >
+        </li>
+      </ul>
+    </button>
+
+    <button class="nav-item btn-servs-options">
+      <span>Gobierno</span>
+      <ul class="header-list-servs">
+        <li>
+          <a href="/gob-grp/">GRP</a>
+        </li>
+        <li>
+          <a href="/gob-ventanilla/">Ventanilla Digital</a>
         </li>
       </ul>
     </button>
