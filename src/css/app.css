@@ -411,15 +411,14 @@ nav:hover .line-back-header {
 }
 
 .header-list-servs {
-    width: 270px;
+    
     top: 80px;
     position: absolute;
     background-color: #222222;
     margin: 0;
     padding: 0;
-    list-style: none;
+    
     display: flex;
-    flex-direction: column;
     padding: 10px;
     overflow: hidden;
 
@@ -428,6 +427,33 @@ nav:hover .line-back-header {
     opacity: 0;
     clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
 }
+.header-list-servs ul{
+    width: 270px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.header-list-servs ul ul{
+    width: auto;
+    overflow: hidden;
+    height: auto;
+    transition: 0.2s;
+}
+.header-list-servs ul ul:hover{
+    background-color: #1b1b1c;
+
+}
+.header-list-servs ul ul:hover li span{
+    color: var(--verde);
+}
+.header-list-servs ul ul li:not(.header-list-servs ul ul li:nth-child(1)){
+    display: none;
+}
+.header-list-servs ul ul:hover li{
+    display: block !important;
+}
 
 .btn-servs-options:hover .header-list-servs {
     visibility: visible;
@@ -435,7 +461,8 @@ nav:hover .line-back-header {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
 }
 
-.header-list-servs li a {
+.header-list-servs li a,
+.header-list-servs li span {
     padding: 15px;
     display: block;
 }
