@@ -1,0 +1,534 @@
+---
+import Layout from "../layouts/layout.astro";
+import "../css/gob.css";
+
+import BtnReserva from "../components/btn-reserva.astro";
+---
+
+<Layout>
+  <section id="inicio">
+    <div class="content content-inicio">
+      <div class="content-limit">
+        <!-- <img
+          src="/img/home-icon-serv-8.png"
+          alt="Icono Itops"
+          style="width: 100px;"
+        /> -->
+        <h1 class="mt-2">GOBIERNO<span>.</span></h1>
+        <p class="color-verde font-4 font-light mt-2">
+          Cumpliendo con los estándares de mejora regulatoria y facilitando la
+          interacción entre ciudadanos y gobierno
+        </p>
+        <div class="mt-2">
+          <BtnReserva />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-que-es">
+      <div class="content-limit mt-6">
+        <div class="flex justify-between">
+          <div style="width: 55%;">
+            <h2 class="font-4 color-verde">GRP</h2>
+            <span>¿Que es?</span>
+            <p class="font-light">
+              Es una solución tecnológica de gestión gubernamental, integral,
+              robusta, flexible y completamente desarrollada para cumplir con la
+              normatividad de observancia obligatoria en la administración
+              pública, entre ellas la Ley General de Contabilidad Gubernamental
+              y los lineamientos emitidos por el Consejo Nacional de
+              Armonización Contable (CONAC), así como la ley de Adquisiciones,
+              Arrendamientos y Servicios del Sector Público.
+            </p>
+          </div>
+          <div style="width: 45%;" class="flex align-center">
+            <img
+              src="/img/multinube.png"
+              alt="Servidor"
+              style="width: 80%; margin-top: -50px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-funcionalidades mt-6">
+      <div class="content-limit">
+        <h2 class="font-4">Funcionalidades</h2>
+        <div class="flex gap-3 mt-3">
+          <div class="card-funcionalidad" style="background-color: #7b960f;">
+            <h3>Control de egresos</h3>
+            <p>
+              Fortalece el control interno del municipio, entidades federales y
+              paraestatales aumentando la eficiencia; permite la visibilidad y
+              rastreabilidad de los procesos y reduce la fuga no controlada del
+              gasto.
+            </p>
+            <p>
+              Esta solución garantiza que cada operación presupuestal sea
+              monitoreada en tiempo real, facilitando la toma de decisiones con
+              información precisa y actualizada.
+            </p>
+            <p>
+              Al optimizar los flujos de trabajo, se minimizan errores
+              administrativos y se asegura el cumplimiento normativo en cada
+              etapa del proceso de egreso.
+            </p>
+          </div>
+          <div class="card-funcionalidad" style="background-color: #38960f;">
+            <h3>Cumplimiento con la legalidad.</h3>
+            <p>
+              Armoniza la información financiera de acuerdo con las reglas de la
+              CONAC y permite dar cumplimiento de la ley de mejora regulatoria.
+            </p>
+            <p>
+              Esta solución asegura que los registros contables y presupuestales
+              estén alineados con las normativas vigentes, facilitando la
+              elaboración de informes precisos y oportunos para la fiscalización
+              y auditoría.
+            </p>
+            <p>
+              De esta forma, se garantiza la correcta presentación de estados
+              financieros y la transparencia en el uso de los recursos públicos.
+            </p>
+          </div>
+          <div class="card-funcionalidad" style="background-color: #008b1c;">
+            <h3>Vinculo para el ciudadano.</h3>
+            <p>
+              Vincula la institución con el ciudadano y provee información
+              transparente para acercarse al ciudadano.
+            </p>
+            <p>
+              Esta herramienta facilita la interacción directa entre el gobierno
+              y la ciudadanía mediante canales de comunicación claros y
+              accesibles.
+            </p>
+            <p>
+              Provee acceso a datos públicos en tiempo real, permitiendo que los
+              ciudadanos consulten el estado de trámites, presupuestos y
+              programas, fomentando así una relación basada en la confianza y la
+              colaboración.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-modulos mt-6">
+      <div class="content-limit">
+        <h2 class="font-4 text-center">Módulos de la solución</h2>
+
+        <div class="box-plataformas mt-3">
+          <div class="card-plataforma">
+            <h3>Gestión Contable</h3>
+            <p>
+              Optimiza los registros financieros mediante sistemas automatizados
+              que garantizan precisión, control y cumplimiento normativo.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Gestión del cobro</h3>
+            <p>
+              Automatiza y monitorea los procesos de recaudación, facilitando un
+              cobro eficiente y oportuno de obligaciones fiscales y servicios.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Planeación y seguimiento presupuestal</h3>
+            <p>
+              Permite elaborar presupuestos estratégicos y monitorear su
+              ejecución en tiempo real, asegurando un uso eficiente de los
+              recursos.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Tesorería</h3>
+            <p>
+              Centraliza la administración de fondos públicos, optimizando los
+              flujos de caja y garantizando la solvencia y transparencia
+              financiera.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Egresos</h3>
+            <p>
+              Controla y rastrea las salidas de recursos, minimizando fugas no
+              autorizadas y asegurando el cumplimiento de compromisos
+              financieros.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Ingresos</h3>
+            <p>
+              Facilita la gestión integral de los ingresos públicos,
+              proporcionando visibilidad sobre su origen y permitiendo una mejor
+              proyección financiera.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Timbrado</h3>
+            <p>
+              Garantiza la emisión correcta y segura de comprobantes fiscales
+              digitales, cumpliendo con las normativas fiscales vigentes.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Recursos Materiales</h3>
+            <p>
+              Optimiza la adquisición, control y distribución de insumos,
+              asegurando la eficiencia en el manejo del inventario.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Gestión de Bienes</h3>
+            <p>
+              Monitorea el ciclo de vida de los activos públicos, garantizando
+              su mantenimiento, control y disposición eficiente.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Nómina / Recursos Humanos</h3>
+            <p>
+              Automatiza la gestión de pagos y prestaciones del personal,
+              facilitando procesos de contratación, control de asistencias y
+              cumplimiento laboral.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>Gestion inmobiliaria</h3>
+            <p>
+              Administra de forma integral los bienes inmuebles, optimizando su
+              uso, mantenimiento y aprovechamiento en beneficio institucional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-cumplimiento mt-6">
+      <div class="content-limit">
+        <div class="flex justify-between">
+          <div style="width: 55%;">
+            <h2 class="font-4 color-verde">Cumplimiento Normativo</h2>
+            <ul>
+              <li>Ley General de Contabilidad Gubernamental</li>
+              <li>
+                Ley de adquisiciones, arrendamientos y servicios del sector
+                público
+              </li>
+              <li>
+                Ley de disciplina financiera de las entidades federativas y los
+                municipios
+              </li>
+              <li>
+                Criterios para la elaboración y presentación de información
+                financiera
+              </li>
+              <li>Ley de Coordinación Fiscal</li>
+              <li>Postulados básicos de contabilidad gubernamental</li>
+              <li>
+                Normas y metodología para la determinación de momentos contables
+              </li>
+              <li>Marco Normativo IMSS</li>
+            </ul>
+          </div>
+          <div style="width: 45%;" class="flex align-center">
+            <img
+              src="/img/serv-itops-consult.png"
+              alt="Servidor"
+              style="width: 80%;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-beneficios">
+      <div class="content-limit">
+        <div class="mt-6">
+          <h2 class="font-4 text-center">Beneficios</h2>
+
+          <div class="box-plataformas mt-2">
+            <div class="card-plataforma">
+              <h3>Incremento medible de la recaudación.</h3>
+              <p>
+                Mejora los procesos de cobro y fiscalización, aumentando los
+                ingresos de forma sostenida.
+              </p>
+            </div>
+            <div class="card-plataforma">
+              <h3>Implantaciones exitosas en 4 a 6 meses</h3>
+              <p>
+                Soluciones rápidas y eficientes, operativas en menos de seis
+                meses con soporte continuo.
+              </p>
+            </div>
+            <div class="card-plataforma">
+              <h3>Mejores finanzas públicas</h3>
+              <p>
+                Optimiza el presupuesto y controla los gastos, garantizando
+                sostenibilidad financiera.
+              </p>
+            </div>
+            <div class="card-plataforma">
+              <h3>Mejor imagen del gobierno</h3>
+              <p>
+                Fomenta la transparencia y eficiencia, fortaleciendo la
+                confianza ciudadana.
+              </p>
+            </div>
+            <div class="card-plataforma">
+              <h3>Calificadoras y Evaluadoras</h3>
+              <p>
+                Reconocimiento de calificadoras internacionales y evaluadoras de
+                gobierno.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-ventanilla">
+      <div class="content-limit mt-6">
+        <div class="flex justify-between">
+          <div style="width: 55%;">
+            <h2 class="font-4 color-verde">Ventanilla Digital para Gobierno</h2>
+            <p class="font-light">
+              La plataforma SaaS de Ntechnology, es una solución tecnológica
+              diseñada específicamente para gobiernos estatales y municipales,
+              que permite la implementación de una Ventanilla Digital de
+              Trámites y Servicios. ​
+            </p>
+            <p class="font-light">
+              Esta plataforma cumple con los estándares nacionales e
+              internacionales y las normativas locales y federales, como la Ley
+              General de Mejora Regulatoria, lo que asegura un servicio
+              eficiente y transparente para los ciudadanos.​
+            </p>
+          </div>
+          <div style="width: 45%;" class="flex align-center">
+            <img
+              src="/img/hardware-tecno.png"
+              alt="Servidor"
+              style="width: 80%;"
+            />
+          </div>
+        </div>
+
+        <div class="flex justify-between mt-6">
+          <div style="width: 45%;" class="flex align-center">
+            <img
+              src="/img/mundo-tuerca.png"
+              alt="Servidor"
+              style="width: 60%;"
+            />
+          </div>
+          <div style="width: 55%;">
+            <h2 class="font-4 color-verde" style="text-align: center;">
+              ¿QUE ES?
+            </h2>
+            <p class="font-light" style="text-align: center;">
+              Es una solución integral que <strong class="color-verde"
+                >optimiza</strong
+              > la prestación de servicios gubernamentales mediante la
+              <strong class="color-verde">digitalización de trámites</strong>
+            </p>
+            <p class="font-light" style="text-align: center;">
+              <small>
+                Esta plataforma está diseñada para ser flexible, escalable y de
+                fácil implementación, proporcionando una experiencia ágil tanto
+                para los ciudadanos como para los funcionarios públicos.
+              </small>
+              <br />
+              <br />
+              <small>
+                Cumpliendo con los estándares de mejora regulatoria y
+                facilitando la interacción entre ciudadanos y gobierno
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-plataforma mt-6">
+      <div class="content-limit">
+        <h2 class="font-4 text-center">Capacidades de la plataforma</h2>
+
+        <div class="box-plataformas mt-3">
+          <div class="card-plataforma">
+            <h3>AUTENTICACIÓN DE USUARIOS</h3>
+            <p>
+              Proporciona métodos seguros de verificación de identidad,
+              incluyendo firma digital y validación con firma electrónica
+              avanzada (SAT), garantizando el acceso seguro de los ciudadanos al
+              sistema.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>TRÁMITES Y SERVICIOS</h3>
+            <p>
+              Permite configurar y gestionar trámites de diversa complejidad,
+              desde los más sencillos hasta aquellos que requieren validaciones
+              por múltiples dependencias gubernamentales y entidades externas.​
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>REPORTES Y ESTADÍSTICOS</h3>
+            <p>
+              Proporciona métodos seguros de verificación de identidad,
+              incluyendo firma digital y validación con firma electrónica
+              avanzada (SAT), garantizando el acceso seguro de los ciudadanos al
+              sistema.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>INSPECCIONES</h3>
+            <p>
+              Permite a las entidades obtener informes sobre el uso de la
+              ventanilla, la cantidad de trámites realizados, los tiempos de
+              respuesta, recaudaciones entre otras.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>REPOSITORIO DIGITAL CIUDADANO</h3>
+            <p>
+              Almacena de forma segura los documentos validados de los
+              ciudadanos, permitiendo su reutilización en futuros trámites y
+              agilizando los procesos administrativos.
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>MI EXPEDIENTE​​</h3>
+            <p>
+              Contiene los documentos electrónicos necesarios para realizar los
+              trámites. Los ciudadanos podrán subir y actualizar sus documentos
+              digitales. ​
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>MENSAJES​​</h3>
+            <p>
+              Envío de notificaciones vía correo electrónico sobre el progreso
+              de los trámites, aprobaciones, solicitud de información y/o
+              motivos de rechazos​
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>TUTORIALES​</h3>
+            <p>
+              Sección que muestra a los ciudadanos una guía para solicitar los
+              trámites publicados en la ventanilla única digital​
+            </p>
+          </div>
+          <div class="card-plataforma">
+            <h3>MI CUENTA​​</h3>
+            <p>
+              Permite mostrar el perfil del ciudadano para modificar los datos
+              generales del mismo​
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content content-tramites mt-6">
+      <div class="content-limit">
+        <div class="flex justify-between">
+          <div style="width: 55%;">
+            <h2 class="font-4 color-verde">Trámites disponibles​​</h2>
+            <p class="font-light">
+              La plataforma ofrece la posibilidad de gestionar, configurar y
+              desplegar 22 trámites y servicios digitales pre configurados,
+              listos para su personalización e implementación rápida, lo que
+              permite a los gobiernos una transición ágil hacia la
+              digitalización total de sus servicios.​
+            </p>
+            <p class="font-light">
+              Cada uno de estos trámites está diseñado para ser gestionado de
+              manera digital, eliminando la necesidad de interacciones
+              presenciales y facilitando el acceso a los servicios a través de
+              la plataforma en línea​
+            </p>
+          </div>
+          <div style="width: 45%;" class="flex align-center">
+            <img
+              src="/img/serv-itops-consult.png"
+              alt="Servidor"
+              style="width: 80%;"
+            />
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <h3 class="font-1 text-center">Tipos de trámites​</h3>
+
+          <div class="box-plataformas mt-2">
+            <div class="card-plataforma">
+              <h3>Consulta y Pago del Impuesto Predial</h3>
+              <p>
+                Este trámite permite a los ciudadanos consultar y pagar en línea
+                el impuesto sobre la propiedad inmobiliaria. El sistema calcula
+                automáticamente el monto adeudado en función del valor catastral
+                del inmueble, y ofrece diversas opciones de pago digital para
+                mayor comodidad del usuario.
+              </p>
+            </div>
+            <div class="card-plataforma">
+              <h3>Consulta y Pago de Recolección de Residuos</h3>
+              <p>
+                Facilita la gestión del pago por el servicio de recolección de
+                basura y residuos sólidos, ofreciendo a los ciudadanos la opción
+                de consultar los montos adeudados y efectuar el pago sin
+                necesidad de acudir a las oficinas municipales.
+              </p>
+            </div>
+            <div class="card-plataforma">
+              <h3>Permiso de Uso de Suelo para Operación​​</h3>
+              <p>
+                Este trámite permite a los ciudadanos y empresas obtener
+                permisos para el uso de suelo en actividades comerciales,
+                industriales o residenciales, de acuerdo con los planes de
+                desarrollo urbano del municipio.​
+              </p>
+            </div>
+            <div class="card-plataforma">
+              <h3>Pago de Funcionamiento de Establecimiento​</h3>
+              <p>
+                Facilita el pago de derechos para la operación de
+                establecimientos comerciales, ayudando a las empresas a cumplir
+                con las normativas locales de manera rápida y sencilla a través
+                de la plataforma.​
+              </p>
+            </div>
+            <div class="card-plataforma">
+              <h3>Dictamen Aprobatorio para Locales Comerciales</h3>
+              <p>
+                Este trámite permite a los ciudadanos solicitar y obtener el
+                dictamen aprobatorio que certifica que un local comercial cumple
+                con los requisitos necesarios para su apertura.​
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

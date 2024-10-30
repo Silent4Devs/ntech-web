@@ -435,6 +435,26 @@ nav:hover .line-back-header {
     padding: 10px;
 }
 
+.header-list-servs ul ul{
+    width: auto;
+    overflow: hidden;
+    height: auto;
+    transition: 0.2s;
+}
+.header-list-servs ul ul:hover{
+    background-color: #1b1b1c;
+
+}
+.header-list-servs ul ul:hover li span{
+    color: var(--verde);
+}
+.header-list-servs ul ul li:not(.header-list-servs ul ul li:nth-child(1)){
+    display: none;
+}
+.header-list-servs ul ul:hover li{
+    display: block !important;
+}
+
 .btn-servs-options:hover .header-list-servs {
     visibility: visible;
     opacity: 1;
