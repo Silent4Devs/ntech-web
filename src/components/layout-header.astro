@@ -23,48 +23,62 @@ import { getRelativeLocaleUrl } from "astro:i18n";
   <nav>
     <button class="nav-item btn-servs-options">
       <span>{tl("nav.servicios")}</span>
-      <ul class="header-list-servs">
-        <style>
-          li a[href=""] {
-            opacity: 0.3;
-          }
-        </style>
-        <li>
-          <a
-            href={getRelativeLocaleUrl(
-              currentLocale ?? "",
-              "servicio-agileops"
-            )}>{tl("serv.itopsAuto")}</a
-          >
-        </li>
-        <li>
-          <a href={getRelativeLocaleUrl(currentLocale ?? "", "servicio-itops")}
-            >{tl("serv.itops")}</a
-          >
-        </li>
-        <li>
-          <a
-            href={getRelativeLocaleUrl(
-              currentLocale ?? "",
-              "servicio-multicloud"
-            )}>{tl("serv.nubePublica")}</a
-          >
-        </li>
-        <li>
-          <a
-            href={getRelativeLocaleUrl(
-              currentLocale ?? "",
-              "servicio-nube-privada"
-            )}>{tl("serv.nubePrivada")}</a
-          >
-        </li>
-        <li><a href="/servicio-hardware/">Hardware</a></li>
-        <li>
-          <a href="">{tl("serv.dataMl")}</a>
-        </li>
-        <li><a href="">{tl("serv.monitoreo_industria")}</a></li>
-        <li><a href="">{tl("serv.industria")}</a></li>
-      </ul>
+      <div class="header-list-servs">
+        <ul>
+          <style>
+            li a[href=""] {
+              opacity: 0.3;
+            }
+          </style>
+          <li>
+            <a
+              href={getRelativeLocaleUrl(
+                currentLocale ?? "",
+                "servicio-agileops"
+              )}>{tl("serv.itopsAuto")}</a
+            >
+          </li>
+          <li>
+            <a
+              href={getRelativeLocaleUrl(currentLocale ?? "", "servicio-itops")}
+              >{tl("serv.itops")}</a
+            >
+          </li>
+          <li>
+            <a
+              href={getRelativeLocaleUrl(
+                currentLocale ?? "",
+                "servicio-multicloud"
+              )}>{tl("serv.nubePublica")}</a
+            >
+          </li>
+          <li>
+            <a
+              href={getRelativeLocaleUrl(
+                currentLocale ?? "",
+                "servicio-nube-privada"
+              )}>{tl("serv.nubePrivada")}</a
+            >
+          </li>
+          <li><a href="/servicio-hardware/">Hardware</a></li>
+          <li>
+            <a href="">{tl("serv.dataMl")}</a>
+          </li>
+          <li><a href="">{tl("serv.monitoreo_industria")}</a></li>
+          <li><a href="">{tl("serv.industria")}</a></li>
+        </ul>
+        <ul>
+          <li>
+            <span><strong>Gobierno</strong></span>
+          </li>
+          <li>
+            <a href="/gob-grp/">GRP</a>
+          </li>
+          <li>
+            <a href="/gob-ventanilla/">Ventanilla Digital</a>
+          </li>
+        </ul>
+      </div>
     </button>
 
     <button class="nav-item btn-servs-options">
@@ -79,18 +93,6 @@ import { getRelativeLocaleUrl } from "astro:i18n";
           <a href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
             >{tl("nav.fundador")}</a
           >
-        </li>
-      </ul>
-    </button>
-
-    <button class="nav-item btn-servs-options">
-      <span>Servicios Gubernamentales</span>
-      <ul class="header-list-servs">
-        <li>
-          <a href="/gob-grp/">GRP</a>
-        </li>
-        <li>
-          <a href="/gob-ventanilla/">Ventanilla Digital</a>
         </li>
       </ul>
     </button>
