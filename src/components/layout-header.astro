@@ -83,18 +83,20 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 
     <button class="nav-item btn-servs-options">
       <span>{tl("nav.nosotros")}</span>
-      <ul class="header-list-servs">
-        <li>
-          <a href={getRelativeLocaleUrl(currentLocale ?? "", "nosotros")}
-            >{tl("nav.sobre_nosotros")}</a
-          >
-        </li>
-        <li>
-          <a href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
-            >{tl("nav.fundador")}</a
-          >
-        </li>
-      </ul>
+      <div class="header-list-servs">
+        <ul>
+          <li>
+            <a href={getRelativeLocaleUrl(currentLocale ?? "", "nosotros")}
+              >{tl("nav.sobre_nosotros")}</a
+            >
+          </li>
+          <li>
+            <a href={getRelativeLocaleUrl(currentLocale ?? "", "fundadores")}
+              >{tl("nav.fundador")}</a
+            >
+          </li>
+        </ul>
+      </div>
     </button>
 
     <a
