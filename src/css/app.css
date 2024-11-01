@@ -671,7 +671,7 @@ footer {
         padding-bottom: 10px;
     }
 
-    .nav-item.btn-servs-options:hover ul {
+    .nav-item.btn-servs-options:hover .header-list-servs {
         position: relative;
         top: 0px;
         margin-top: 10px;
